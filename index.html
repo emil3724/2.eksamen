@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="DA">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betty Zoo</title>
+    <style>
+        /*generelle indstillinger*/
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: lavender;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .hidden {
+            /*    display: none;*/
+            /*    transform: scale(0);*/
+            transform: translateY(100%);
+            opacity: 0;
+            text-decoration: none;
+        }
+
+        #menuknap {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: 0%;
+            width: 100%;
+            text-align: center;
+            font-size: 3rem;
+            cursor: pointer;
+
+
+        }
+
+        #menu {
+            list-style-type: none;
+            transition: transform .10s;
+            transform-origin: left bottom;
+            text-align: center;
+            font-size: 4rem;
+
+        }
+
+        a {
+            text-decoration-line: none;
+            color: black;
+            font-family: monospace;
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+                <li><a href="forside.html">designs</a></li>
+                <li><a href="underside.html">tatovøren</a></li>
+                <li><a href="forside.html">prisliste</a></li>
+                <li><a href="underside.html">kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        window.addEventListener("load", sidenVises);
+
+        function sidenVises() {
+            console.log("sidenVises");
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+        }
+
+        function toggleMenu() {
+            console.log("toggleMenu");
+            document.querySelector("#menu").classList.toggle("hidden");
+
+            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector("#menuknap").textContent = "☰";
+            } else {
+                document.querySelector("#menuknap").textContent = "✖";
+            }
+        }
+    </script>
+</body></html>
