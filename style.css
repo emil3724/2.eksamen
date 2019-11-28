@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #EBEBEB;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+h3 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+}
+
+.header_overskrift h3{
+    color: #7D7096;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.hidden {
+    /*    display: none;*/
+    /*    transform: scale(0);*/
+    transform: translateY(100%);
+    opacity: 0;
+    text-decoration: none;
+}
+
+#menuknap {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    cursor: pointer;
+
+
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: left bottom;
+    text-align: center;
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+a:hover {
+    color: greenyellow;
+}
+
+
+#velkommen_boks{
+    display: flex;
+    background-color: #B8C79F;
+    height: 500px;
+}
+
+.velkommen_tekst{
+    background-color: rgba(255, 255, 255, 0.62);
+    height: 300px;
+    align-self: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+.velkommen_tekst h2{
+    color:  #7D7096;
+    font-size: 30px;
+    text-align: center;
+}
+
+.velkommen_tekst p{
+    color:  #7D7096;
+    font-size: 18px;
+}
+
+/*  om tanya  */
+
+#om_tanya{
+    background-color: #7d7096;
+    height: 850px;
+}
+
+.tanya_billede{
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 90px;
+    filter: grayscale(100%)
+}
+
+.om_tanya_tekst{
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+.om_tanya_tekst h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/*  priser  */
+
+#priser{
+    background-color: #bababa;
+    height: 200px;
+}
+
+.priser_knap{
+    width: 300px;
+    height: 80px;
+    border: none;
+    border-radius: 100px;
+    background-color: #9289a5;
+    margin-left: 90px;
+    margin-top: 60px;
+    font-size: 25px;
+    font-family: 'Abril Fatface', cursive;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.26);
+}
+
+
+button:hover{
+    background-color: #7d7096;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.45);
+}

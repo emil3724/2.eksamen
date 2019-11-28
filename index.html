@@ -5,79 +5,71 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Betty Zoo</title>
-    <style>
-        /*generelle indstillinger*/
-        * {
-            box-sizing: border-box;
-        }
 
-        body {
-            margin: 0;
-            background-color: lavender;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        img {
-            width: 100%;
-        }
-
-        .hidden {
-            /*    display: none;*/
-            /*    transform: scale(0);*/
-            transform: translateY(100%);
-            opacity: 0;
-            text-decoration: none;
-        }
-
-        #menuknap {
-            display: inline-block;
-            position: absolute;
-            left: 0;
-            bottom: 0%;
-            width: 100%;
-            text-align: center;
-            font-size: 3rem;
-            cursor: pointer;
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
 
-        }
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-        #menu {
-            list-style-type: none;
-            transition: transform .3s;
-            transform-origin: left bottom;
-            text-align: center;
-        }
-
-        a {
-            text-decoration-line: none;
-            color: black;
-            font-family: monospace;
-            cursor: pointer;
-        }
-
-        a:hover {
-            color: greenyellow;
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <nav>
 
-            <div id="menuknap">☰</div>
-            <ul id="menu" class="hidden">
-                <li><a href="forside.html">designs</a></li>
-                <li><a href="underside.html">tatovøren</a></li>
-                <li><a href="forside.html">prisliste</a></li>
-                <li><a href="underside.html">kontakt</a></li>
-            </ul>
-        </nav>
+        <section class="header_overskrift">
+            <h3>Betty Zoo Tattoo</h3>
+        </section>
+
+          <nav>
+
+        <div id="menuknap">☰</div>
+        <ul id="menu" class="hidden">
+            <li><a href="forside.html">designs</a></li>
+            <li><a href="underside.html">tatovøren</a></li>
+            <li><a href="forside.html">prisliste</a></li>
+            <li><a href="underside.html">kontakt</a></li>
+        </ul>
+    </nav>
+
     </header>
+
+
+    <img class="mySlides" src="Billeder/billeder_billede1.png">
+    <img class="mySlides" src="Billeder/billeder-02.png">
+    <img class="mySlides" src="Billeder/billeder-03.png">
+    <img class="mySlides" src="Billeder/billeder-04.png">
+    <img class="mySlides" src="Billeder/billeder-05.png">
+    <img class="mySlides" src="Billeder/billeder-06.png">
+    <img class="mySlides" src="Billeder/billeder-07.png">
+    <img class="mySlides" src="Billeder/billeder-08.png">
+
+    <section id="velkommen_boks">
+        <section class="velkommen_tekst">
+            <h2>Velkommen</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam saepe, qui. Nesciunt, omnis! Numquam repudiandae impedit repellat quos aliquam quibusdam dolorum, nobis sit id eaque, necessitatibus neque fuga quo molestias.</p>
+        </section>
+    </section>
+
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/tNyH3qpdw8E?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div id="om_tanya">
+        <img src="Billeder/tanya.png" alt="" class="tanya_billede">
+        <div class="om_tanya_tekst">
+            <h2>OM MIG</h2>
+            <p>Mit navn er Tanya og jeg arbejder fuldtid som tatovør i min egen butik i København på Frederiksberg.
+                Min stil er bred og jeg holder af at lave meget forskelligt - alt fra de meget grafiske og geometriske tatoveringer til de traditionelle oldschool tattoo motiver samt black and grey.
+                <br>
+                Folk kommer især til mig for mine tynde og rene linier samt mit grafiske udtryk. Desuden er der ikke noget projekt der er for småt til mig - de små ting har ligeså stor værdi som store projekter. </p>
+        </div>
+    </div>
+
+    <div id="priser">
+        <button type="button" class="priser_knap">SE PRISER</button>
+    </div>
+
+
+
     <script>
         window.addEventListener("load", sidenVises);
 
@@ -97,6 +89,25 @@
             } else {
                 document.querySelector("#menuknap").textContent = "✖";
             }
+        }
+
+        /*   slideshow  */
+
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 5 seconds
         }
     </script>
 </body></html>
