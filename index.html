@@ -85,9 +85,9 @@
 		</div>
 
 		<section id="portfolio">
-			<div class="portfolio_wrapper">
-				<div class="portfolio_img"></div>
-			</div>
+			<template>
+				<img class="tat_billede" src="">
+			</template>
 		</section>
 
 		<section id="kontakt">
@@ -99,6 +99,22 @@
 	</div>
 
 	<script>
+		let indhold;
+		document.addEventListener("DOMContentLoaded", hentJson);
+
+		async function hentJson() {
+			const url = "https://marielouiselarsen.eu/kea/2-semester/tema10_eksamen/wordpress/wp-json/wp/v2/tatovering";
+			const myJson = await fetch(url);
+			indhold = await myJson.json();
+
+			visIndhold();
+		}
+
+		function visIndhold() {
+			document.querySelector(".tat_billede").src = indhold.billede.guid;
+		}
+
+
 		window.addEventListener("load", sidenVises);
 
 		function sidenVises() {
