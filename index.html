@@ -2,141 +2,158 @@
 <html lang="DA">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Betty Zoo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betty Zoo</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <header>
 
 
-	<nav class="sticky">
-		<div id="menuknap">☰</div>
-		<ul id="menu" class="hidden">
-			<li><a href="portfolio.html">portfolio</a></li>
-			<li><a href="#om">tatovøren</a></li>
-			<li><a href="#priser">prisliste</a></li>
-			<li><a href="#kontakt">kontakt</a></li>
-		</ul>
+    <nav class="sticky">
+        <div id="menuknap">☰</div>
+        <ul id="menu" class="hidden">
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="#om">tatovøren</a></li>
+            <li><a href="#priser">prisliste</a></li>
+            <li><a href="#kontakt">kontakt</a></li>
+        </ul>
 
 
-	</nav>
+    </nav>
 
 </header>
 
 <body>
 
-	<section class="header_overskrift">
-		<h3>BETTY ZOO TATTOO</h3>
-	</section>
+    <section class="header_overskrift">
+        <h3>BETTY ZOO TATTOO</h3>
+    </section>
 
 
 
-	<img class="mySlides" src="Billeder/billeder_billede1.png">
-	<img class="mySlides" src="Billeder/billeder-02.png">
-	<img class="mySlides" src="Billeder/billeder-03.png">
-	<img class="mySlides" src="Billeder/billeder-04.png">
-	<img class="mySlides" src="Billeder/billeder-05.png">
-	<img class="mySlides" src="Billeder/billeder-06.png">
-	<img class="mySlides" src="Billeder/billeder-07.png">
-	<img class="mySlides" src="Billeder/billeder-08.png">
+    <img class="mySlides" src="Billeder/billeder_billede1.png">
+    <img class="mySlides" src="Billeder/billeder-02.png">
+    <img class="mySlides" src="Billeder/billeder-03.png">
+    <img class="mySlides" src="Billeder/billeder-04.png">
+    <img class="mySlides" src="Billeder/billeder-05.png">
+    <img class="mySlides" src="Billeder/billeder-06.png">
+    <img class="mySlides" src="Billeder/billeder-07.png">
+    <img class="mySlides" src="Billeder/billeder-08.png">
 
-	<div id="content_wrapper">
+    <div id="content_wrapper">
 
-		<section id="velkommen_boks">
-			<section class="velkommen_tekst">
-				<h2>VELKOMMEN</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam saepe, qui. Nesciunt, omnis! Numquam repudiandae impedit repellat quos aliquam quibusdam dolorum, nobis sit id eaque, necessitatibus neque fuga quo molestias.</p>
-			</section>
-		</section>
+        <section id="velkommen_boks">
+            <section class="velkommen_tekst">
+                <h2>VELKOMMEN</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam saepe, qui. Nesciunt, omnis! Numquam repudiandae impedit repellat quos aliquam quibusdam dolorum, nobis sit id eaque, necessitatibus neque fuga quo molestias.</p>
+            </section>
+        </section>
 
-<!--
-		<section id="video_container">
+        <section id="video_container">
 
-			<iframe width="" height="" src="https://www.youtube.com/embed/tNyH3qpdw8E?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video"></div>
 
-		</section>
--->
+        </section>
 
 
-		<div id="priser">
-			<button type="button" class="priser_knap">SE PRISER</button>
-		</div>
+        <div id="priser">
+            <button type="button" class="priser_knap">SE PRISER</button>
+        </div>
 
-		<section id="portfolio">
-			<template>
-				<img class="tat_billede" src="">
-			</template>
-		</section>
+        <section id="portfolio">
+            <template>
+                <img class="tat_billede" src="">
+            </template>
+        </section>
 
-		<section id="kontakt">
-			<div class="google_map"></div>
-			<div class="kontakt_info"></div>
-
-		</section>
-
-	</div>
-
-	<script>
-		let indhold;
-		document.addEventListener("DOMContentLoaded", hentJson);
-
-		async function hentJson() {
-			const url = "https://marielouiselarsen.eu/kea/2-semester/tema10_eksamen/wordpress/wp-json/wp/v2/tatovering";
-			const myJson = await fetch(url);
-			indhold = await myJson.json();
-
-			visIndhold();
-		}
-
-		function visIndhold() {
-			document.querySelector(".tat_billede").src = indhold.billede.guid;
-		}
+        <section id="kontakt">
+            <div class="google_map"></div>
+            <div class="kontakt_info"></div>
+        </section>
 
 
-		window.addEventListener("load", sidenVises);
+        <div class="sectionwrapper_portfolio">
 
-		function sidenVises() {
-			console.log("sidenVises");
-			document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-		}
+            <div id="port_galleri">
+                <div class="galleri_1"></div>
+                <div class="galleri_2"></div>
+                <div class="galleri_3"></div>
+                <div class="galleri_4"></div>
+                <div class="galleri_5"></div>
+                <div class="galleri_6"></div>
+            </div>
 
-		function toggleMenu() {
-			console.log("toggleMenu");
-			document.querySelector("#menu").classList.toggle("hidden");
+            <div class="link_til_portfolio">
+                <a href="portfolio.html">
+                    <p>SE MERE HER ⤐</p>
+                </a>
+            </div>
+        </div>
 
-			let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+    </div>
 
-			if (erSkjult == true) {
-				document.querySelector("#menuknap").textContent = "☰";
-			} else {
-				document.querySelector("#menuknap").textContent = "✖";
-			}
-		}
 
-		/* slideshow */
+    <script>
+        let indhold;
+        document.addEventListener("DOMContentLoaded", hentJson);
 
-		var slideIndex = 0;
-		carousel();
+        async function hentJson() {
+            const url = "https://marielouiselarsen.eu/kea/2-semester/tema10_eksamen/wordpress/wp-json/wp/v2/tatovering";
+            const myJson = await fetch(url);
+            indhold = await myJson.json();
 
-		function carousel() {
-			var i;
-			var x = document.getElementsByClassName("mySlides");
-			for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}
-			slideIndex++;
-			if (slideIndex > x.length) {
-				slideIndex = 1
-			}
-			x[slideIndex - 1].style.display = "block";
-			setTimeout(carousel, 5000); // Change image every 5 seconds
-		}
-	</script>
+            visIndhold();
+        }
+
+        function visIndhold() {
+            document.querySelector(".tat_billede").src = indhold.billede.guid;
+        }
+
+
+        window.addEventListener("load", sidenVises);
+
+        function sidenVises() {
+            console.log("sidenVises");
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+        }
+
+        function toggleMenu() {
+            console.log("toggleMenu");
+            document.querySelector("#menu").classList.toggle("hidden");
+
+            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector("#menuknap").textContent = "☰";
+            } else {
+                document.querySelector("#menuknap").textContent = "✖";
+            }
+        }
+
+        /* slideshow */
+
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 5 seconds
+        }
+    </script>
 </body></html>
