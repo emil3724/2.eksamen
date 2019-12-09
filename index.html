@@ -91,69 +91,79 @@
             </div>
 
             <div class="link_til_portfolio">
-                <a href="portfolio.html">
-                    <p>SE MERE HER ⤐</p>
-                </a>
+                <a href="portfolio.html">SE MERE HER ⤐</a>
             </div>
+        </div>
+
+        <div id="anmeldelser">
+            <h2>ANDRE KUNDER SIGER...</h2>
+            <div id="anmeldelse1">
+
+                <div class="anmeldelse1_billeder">
+                    <img src="Billeder/skull.png" alt="" class="skull">
+                    <img src="Billeder/skull.png" alt="" class="skull">
+                    <img src="Billeder/skull.png" alt="" class="skull">
+                    <img src="Billeder/skull.png" alt="" class="skull">
+                    <img src="Billeder/skull.png" alt="" class="skull">
+
+                    <p>Lækker shop i hyggelige og rene rammer, kvaliteten er totalt i orden!
+                        Tanya er rar og rolig, nede på jorden og yderst behagelig at føre en dialog med! Og så er hun btw ekstremt dygtig!
+                        <br>
+                        Jeg er 100% tilfreds med mit resultat og vil anbefale den til hver en tid. </p>
+                    <div class="anmeldelse1_person">
+                        <p>- Mathilde Lucy Jakobsen</p>
+                    </div>
+                </div>
+            </div>
+            <div class="anmeldelse2">
+                <div id="anmeldelse2">
+
+                    <div class="anmeldelse1_billeder">
+                        <img src="Billeder/skull.png" alt="" class="skull">
+                        <img src="Billeder/skull.png" alt="" class="skull">
+                        <img src="Billeder/skull.png" alt="" class="skull">
+                        <img src="Billeder/skull.png" alt="" class="skull">
+                        <img src="Billeder/skull.png" alt="" class="skull">
+
+                        <p>Så dygtig, sød og venlig! Er så mega glad for mine nye tatoveringer og lige så glad for oplevelsen. Tak ♡
+                            <div class="anmeldelse1_person">
+                                <p>- Michella Melsted Graham</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="anmeldelse3">
+                <div id="anmeldelse1">
+
+                    <div class="anmeldelse1_billeder">
+                        <img src="Billeder/skull.png" alt="" class="skull">
+                        <img src="Billeder/skull.png" alt="" class="skull">
+                        <img src="Billeder/skull.png" alt="" class="skull">
+                        <img src="Billeder/skull.png" alt="" class="skull">
+                        <img src="Billeder/skull.png" alt="" class="skull">
+
+                        <p>Tanya er en super kompetent, dygtig og gennemgående rar tatovør. Man bliver altid mødt med et smil og føler sig altid godt tilpas i hendes selskab. Hun lytter og forstår, uanset om man ønsker at tegne selv eller få hende til at tegne.
+                            <br>
+                            Kæmpe tak for de første syv tatoveringer - and more to come !</p>
+                        <div class="anmeldelse1_person">
+                            <p>- Camilla Lundskov Fuhlendorff</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="kontakt">
+
+            <h2>Hostrups Have 60, 1954 Frederiksberg C</h2>
+            <p>For at booke en tid til tatovering skrev da til mig enten på bettyzootattoo@gmail.com eller på Instagram @bettyzootattoo. Du kan også booke tid til en uforpligtende snak om tatovering. </p>
+
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.2542659981095!2d12.537085999710111!3d55.684567021105764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652539aba1c39f5%3A0xd59fd81538108cfb!2sBettyzootattoo!5e0!3m2!1sda!2sdk!4v1575905828498!5m2!1sda!2sdk" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen="" class="googlemaps"></iframe>
         </div>
 
     </div>
 
+    <script src="script.js"></script>
 
-    <script>
-        let indhold;
-        document.addEventListener("DOMContentLoaded", hentJson);
-
-        async function hentJson() {
-            const url = "https://marielouiselarsen.eu/kea/2-semester/tema10_eksamen/wordpress/wp-json/wp/v2/tatovering";
-            const myJson = await fetch(url);
-            indhold = await myJson.json();
-
-            visIndhold();
-        }
-
-        function visIndhold() {
-            document.querySelector(".tat_billede").src = indhold.billede.guid;
-        }
-
-
-        window.addEventListener("load", sidenVises);
-
-        function sidenVises() {
-            console.log("sidenVises");
-            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-        }
-
-        function toggleMenu() {
-            console.log("toggleMenu");
-            document.querySelector("#menu").classList.toggle("hidden");
-
-            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
-
-            if (erSkjult == true) {
-                document.querySelector("#menuknap").textContent = "☰";
-            } else {
-                document.querySelector("#menuknap").textContent = "✖";
-            }
-        }
-
-        /* slideshow */
-
-        var slideIndex = 0;
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > x.length) {
-                slideIndex = 1
-            }
-            x[slideIndex - 1].style.display = "block";
-            setTimeout(carousel, 5000); // Change image every 5 seconds
-        }
-    </script>
 </body></html>
