@@ -11,9 +11,6 @@
 
 	<header>
 
-		<section class="header_overskrift">
-			<h3>BETTY ZOO TATTOO</h3>
-		</section>
 
 		<nav>
 
@@ -29,6 +26,18 @@
 
 	</header>
 
+	<main>
+		<h1 class="portfolio_overskrift">Portfolio</h1>
+		<section id="portfolio_1"></section>
+
+	</main>
+	<template>
+		<article>
+			<img class="tat_img" src="">
+		</article>
+	</template>
+
+
 	<script>
 		window.addEventListener("load", sidenVises);
 
@@ -36,6 +45,35 @@
 			console.log("sidenVises");
 			document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 		}
+
+		let side;
+		const url = "https://marielouiselarsen.eu/kea/2-semester/tema10_eksamen/wordpress/wp-json/wp/v2/tatovering";
+
+		document.addEventListener("DOMContentLoaded", start);
+
+		function start() {
+			hentJson();
+		}
+
+		async function hentJson() {
+			const response = await fetch(url);
+			tatoveringer = await response.json();
+			console.log(tatoveringer);
+			vis();
+
+		}
+
+		function vis() {
+			const skabelon = document.querySelector("template");
+			const dest = document.querySelector("#portfolio_1");
+
+			tatoveringer.forEach(tatovering => {
+				const klon = skabelon.cloneNode(true).content;
+				klon.querySelector(".tat_img").src = tatovering.billede.guid;
+				dest.appendChild(klon);
+			})
+		}
+
 
 		function toggleMenu() {
 			console.log("toggleMenu");
