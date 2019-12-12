@@ -227,42 +227,25 @@ button:hover {
 	margin: 5px;
 }
 
-#anmeldelser {}
-
-#anmeldelse1 {
+#anmeldelser {
+	width: 100%;
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.anmeldelse {
+	width: 100%;
+
 	text-align: center;
 	align-items: center;
-	height: 300px;
 	padding-top: 50px;
 	padding-bottom: 20px;
 	background-color: rgba(255, 255, 255, 0.37);
 	margin-bottom: 30px;
 }
 
-#anmeldelse2 {
-	display: flex;
-	text-align: center;
-	align-items: center;
-	height: 300px;
-	padding-top: 50px;
-	padding-bottom: 20px;
-	background-color: rgba(255, 255, 255, 0.37);
-	margin-bottom: 30px;
-}
-
-#anmeldelse3 {
-	display: flex;
-	text-align: center;
-	align-items: center;
-	height: 350px;
-	padding-top: 70px;
-	padding-bottom: 50px;
-	background-color: rgba(255, 255, 255, 0.37);
-	margin-bottom: 30px;
-}
-
-#anmeldelser h2 {
+.anmeldelser_h2 {
 	text-align: center;
 	color: #7D7096;
 }
@@ -278,7 +261,10 @@ button:hover {
 
 }
 
-.anmeldelse1_billeder {}
+.anmeldelse_billeder {
+	width: 100%;
+
+}
 
 
 
@@ -353,6 +339,8 @@ input[type=submit]:hover {
 	color: white;
 }
 
+
+
 #portfolio_1 {
 	display: flex;
 	flex-direction: row;
@@ -362,7 +350,8 @@ input[type=submit]:hover {
 }
 
 #portfolio_1 img {
-	width: 400px;
+	width: 240px;
+	padding-bottom: 5px;
 }
 
 
@@ -377,10 +366,6 @@ input[type=submit]:hover {
 
 	}
 
-	nav {
-		background-color: aqua;
-
-	}
 
 	#menu {
 		display: flex;
@@ -410,14 +395,50 @@ input[type=submit]:hover {
 		left: 0;
 	}
 
-	#om_tanya {
-		display: flex;
-
+	#portfolio_1 {
+		padding-left: 100px;
+		padding-right: 100px;
 	}
 
-	.tanya_billede img {
+	#portfolio_1 img {
+		width: 400px;
+		padding-bottom: 10px;
+	}
+
+	#portfolio img {
+		width: 340px;
+	}
+
+	#anmeldelser {
 		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
 	}
+
+
+	.anmeldelse {
+		text-align: center;
+		align-items: center;
+		width: 300px;
+		background-color: rgba(255, 255, 255, 0.37);
+		margin-bottom: 30px;
+
+	}
+
+	.anmeldelse_txt {
+		height: 60%;
+
+	}
+
+	.anmeldelse p {
+		font-size: 12px;
+		height: 100px;
+	}
+
 
 }
 
