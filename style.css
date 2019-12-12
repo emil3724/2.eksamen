@@ -121,12 +121,14 @@ a:hover {
 
 #velkommen_boks {
 	display: flex;
-	height: 350px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+
 }
 
 .velkommen_tekst {
 	background-color: rgba(255, 255, 255, 0.37);
-	height: 300px;
+
 	align-self: center;
 	padding: 20px;
 }
@@ -137,9 +139,13 @@ a:hover {
 	text-align: center;
 }
 
+.undertekst {
+	text-align: center;
+}
+
 .velkommen_tekst p {
 	color: #7D7096;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 iframe {
@@ -428,7 +434,7 @@ footer {
 @media only screen and (min-width: 700px) {
 
 	#menuknap {
-		height: 0;
+		visibility: hidden;
 
 
 
@@ -451,9 +457,23 @@ footer {
 
 	}
 
+	#menu.hidden {
+		transform: translateX(0);
+		opacity: 1;
+		width: 100%;
+
+	}
+
 	#content_wrapper {
 		margin-left: 100px;
 		margin-right: 100px;
+	}
+
+
+	.velkommen_tekst {
+		width: 100%;
+		padding-right: 200px;
+		padding-left: 200px;
 	}
 
 	.mySlides {
