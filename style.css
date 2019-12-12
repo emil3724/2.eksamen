@@ -10,9 +10,11 @@ body {
 	background-attachment: fixed;
 }
 
+/*
 html {
 	scroll-behavior: smooth;
 }
+*/
 
 img {
 	width: 100%;
@@ -156,15 +158,15 @@ iframe {
 
 /*Portfolio*/
 
-main h2 {
+.portfolio_h2 {
 	color: #7D7096;
 	text-align: center;
 }
 
 #portfolio {
 	display: flex;
-	justify-content: space-around;
 	flex-direction: row;
+	justify-content: center;
 	flex-wrap: wrap;
 	width: 100%;
 
@@ -174,18 +176,15 @@ main h2 {
 	width: 200px;
 }
 
+
 .link_til_portfolio {
-	text-align: right;
 	margin-right: 10px;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
+	text-align: right;
 
 }
 
-.link_til_portfolio p {
-	color: #7D7096;
-	font-size: 17px;
-	margin: 0;
-}
+
 
 
 /*    priser    */
@@ -194,6 +193,7 @@ main h2 {
 #priser {
 	display: flex;
 	justify-content: center;
+	text-align: center;
 
 }
 
@@ -204,6 +204,7 @@ main h2 {
 	border: none;
 	border-radius: 100px;
 	padding: 10px;
+	margin-top: 30px;
 	background-color: #9289a5;
 	color: white;
 	font-size: 20px;
@@ -212,9 +213,37 @@ main h2 {
 }
 
 
-button:hover {
+.priser_knap:hover {
 	background-color: #7d7096;
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.26);
+	cursor: pointer;
+}
+
+
+
+#pris_vindue {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	align-content: center;
+	justify-content: center;
+	color: white;
+	padding: 30px;
+	width: 400px;
+	background-color: #9289a5;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.26);
+}
+
+.luk_knap {
+	width: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 30px;
+	align-self: center
+}
+
+.luk_knap:hover {
+	cursor: pointer;
 }
 
 
@@ -285,7 +314,6 @@ button:hover {
 .kontakt_tekst p {
 	padding-left: 30px;
 	padding-right: 30px;
-	text-align: justify;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -332,7 +360,47 @@ input[type=submit]:hover {
 	margin-bottom: 30px;
 }
 
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #7d7096;
+	height: 150px;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 30px;
+}
+
+.social {
+	width: 200px;
+}
+
+.logo {
+	width: 200px;
+	text-align: center;
+	color: white;
+}
+
+.info {
+	width: 200px;
+	text-align: right;
+}
+
+.info p {
+	padding: 0;
+	margin: 4px;
+}
+
 /*Portfolio site*/
+
+.go_back {
+	margin-left: 100px;
+	padding: 10px;
+	color: white;
+	background-color: #7d7096;
+
+}
+
 
 .portfolio_overskrift {
 	text-align: center;
@@ -409,6 +477,18 @@ input[type=submit]:hover {
 		width: 340px;
 	}
 
+	#pris_vindue {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		align-content: center;
+		justify-content: center;
+		color: white;
+		padding: 30px;
+		width: 800px;
+		background-color: #9289a5;
+	}
+
 	#anmeldelser {
 		width: 100%;
 		display: flex;
@@ -437,6 +517,16 @@ input[type=submit]:hover {
 	.anmeldelse p {
 		font-size: 12px;
 		height: 100px;
+	}
+
+	.kontakt_tekst {
+		padding-right: 150px;
+		padding-left: 150px;
+	}
+
+	.container_kontakt {
+		padding-right: 200px;
+		padding-left: 200px;
 	}
 
 

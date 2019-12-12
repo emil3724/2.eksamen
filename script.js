@@ -3,6 +3,7 @@ window.addEventListener("load", sidenVises);
 function sidenVises() {
 	console.log("sidenVises");
 	document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+	document.querySelector(".priser_knap").addEventListener("click", visPriser);
 }
 
 let side;
@@ -34,6 +35,8 @@ function vis() {
 }
 
 
+
+
 function toggleMenu() {
 	console.log("toggleMenu");
 	document.querySelector("#menu").classList.toggle("hidden");
@@ -46,6 +49,17 @@ function toggleMenu() {
 		document.querySelector("#menuknap").textContent = "✖";
 	}
 }
+
+function visPriser() {
+	document.querySelector("#pris_vindue").classList.remove("hidden");
+	document.querySelector(".luk_knap").addEventListener("click", skjulPriser);
+
+}
+
+function skjulPriser() {
+	document.querySelector("#pris_vindue").classList.add("hidden");
+}
+
 
 /* slideshow */
 
