@@ -11,23 +11,39 @@
 
 	<header>
 
-		<section class="header_overskrift">
-			<h3>BETTY ZOO TATTOO</h3>
-		</section>
 
-		<nav>
-
-			<div id="menuknap">☰</div>
-			<ul id="menu" class="hidden">
-
-				<li><a href="index.html#om">tatovøren</a></li>
-				<li><a href="index.html#priser">prisliste</a></li>
-				<li><a href="index.html#portfolio">portfolio</a></li>
-				<li><a href="underside.html">kontakt</a></li>
-			</ul>
+		<nav class="sticky">
+			<a class="go_back" href="index.html">GO BACK TO SITE</a>
 		</nav>
 
 	</header>
+
+	<main>
+		<h1 class="portfolio_overskrift">PORTFOLIO BY BETTY ZOO</h1>
+		<section id="portfolio_1"></section>
+
+	</main>
+	<template>
+		<article>
+			<img class="tat_img" src="">
+		</article>
+	</template>
+
+	<footer>
+		<div class="social">
+			<p>instagram</p>
+			<p>facebook</p>
+		</div>
+		<div class="logo">
+			<h1>BETTY ZOO</h1>
+		</div>
+		<div class="info">
+			<p>Hostrups have 60</p>
+			<p>1954 frederiksberg</p>
+			<p>bettyzootatto@gmail.com</p>
+		</div>
+	</footer>
+
 
 	<script>
 		window.addEventListener("load", sidenVises);
@@ -36,6 +52,35 @@
 			console.log("sidenVises");
 			document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 		}
+
+		let side;
+		const url = "https://marielouiselarsen.eu/kea/2-semester/tema10_eksamen/wordpress/wp-json/wp/v2/tatovering";
+
+		document.addEventListener("DOMContentLoaded", start);
+
+		function start() {
+			hentJson();
+		}
+
+		async function hentJson() {
+			const response = await fetch(url);
+			tatoveringer = await response.json();
+			console.log(tatoveringer);
+			vis();
+
+		}
+
+		function vis() {
+			const skabelon = document.querySelector("template");
+			const dest = document.querySelector("#portfolio_1");
+
+			tatoveringer.forEach(tatovering => {
+				const klon = skabelon.cloneNode(true).content;
+				klon.querySelector(".tat_img").src = tatovering.billede.guid;
+				dest.appendChild(klon);
+			})
+		}
+
 
 		function toggleMenu() {
 			console.log("toggleMenu");
