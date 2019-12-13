@@ -76,7 +76,7 @@ nav {
     display: inline-block;
     position: absolute;
     right: 0;
-    text-align: right;
+    text-align: left;
     padding-right: 10px;
     font-size: 2rem;
     cursor: pointer;
@@ -502,15 +502,26 @@ footer {
         position: fixed;
         flex-direction: row;
         list-style-type: none;
-        justify-content: space-between;
+        justify-content: ;
         top: 0;
         width: 100%;
         height: 50px;
         margin: 0;
-        padding-left: 20px;
+        padding-left: 30px;
         padding-right: 20px;
         padding-top: 10px;
+    }
 
+    .menu_knap1 {
+        padding-left: 780px
+    }
+
+    .menu_knap2 {
+        padding-left: 80px
+    }
+
+    .menu_knap3 {
+        padding-left: 80px
     }
 
     li {
@@ -552,13 +563,21 @@ footer {
         width: 100%;
         height: auto;
         color: white;
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 350px;
+        padding-right: 350px;
         padding-bottom: 100px;
         background-color: #9289a5;
-        text-align: center;
         align-content: center;
+        line-height: 1.4rem;
+    }
 
+    #content_collap h2 {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    #content_collap p {
+        text-align: justify;
     }
 
     .velkommen_tekst {
@@ -675,7 +694,6 @@ footer {
         padding: 0;
     }
 
-    footer {}
 
 }
 
@@ -701,6 +719,29 @@ footer {
     .velkommen_tekst {
         width: 100%;
 
+    }
+
+
+    /*     footer     */
+
+
+    .social {
+        display: flex;
+    }
+
+    .some {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .logo h1 {
+        margin-top: 30px;
+    }
+
+    footer p {
+        color: white;
     }
 
 }
