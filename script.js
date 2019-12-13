@@ -47,8 +47,10 @@ function toggleMenu() {
 
 	if (erSkjult == true) {
 		document.querySelector("#menuknap").textContent = "☰";
+		document.querySelector("#menuknap").style.color = "white";
 	} else {
 		document.querySelector("#menuknap").textContent = "✖";
+		document.querySelector("#menuknap").style.color = "#7D7096";
 	}
 }
 
