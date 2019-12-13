@@ -1,14 +1,19 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+	margin: 0;
+	background-color: #CBC0C5;
 
-    background-image: url(Billeder/baggrund.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
+
+/*
+	background-image: url(Billeder/baggrund.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+*/
 
 /*
 html {
@@ -17,162 +22,193 @@ html {
 */
 
 img {
-    width: 100%;
+	width: 100%;
 }
 
 h2 {
-    font-family: 'Abril Fatface', cursive;
+	font-family: 'Abril Fatface', cursive;
 }
 
 h3 {
-    font-family: 'Abril Fatface', cursive;
+	font-family: 'Abril Fatface', cursive;
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
-    line-height: 25px;
+	font-family: 'Raleway', sans-serif;
+
 }
 
 .sticky {
-    position: fixed;
+	position: fixed;
 
 }
 
 .header_overskrift {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    top: 190px;
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    top: 40px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	top: 40px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
 }
 
 #content_wrapper {
-    margin-left: 30px;
-    margin-right: 30px;
+	/*
+		margin-left: 30px;
+		margin-right: 30px;
+*/
 }
 
 .hidden {
-    display: none;
-    transform: scale(0);
-    transform: translateY(100%);
-    opacity: 0;
-    text-decoration: none;
+	display: none;
+	transform: scale(0);
+	transform: translateY(100%);
+	opacity: 0;
+	text-decoration: none;
 }
 
 nav {
-    z-index: 2;
-    width: 100vw;
-    z-index: 2;
-    width: 100vw;
-    font-size: 16px;
+	z-index: 2;
+	width: 100vw;
+	font-size: 16px;
+
 }
 
 #menuknap {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    text-align: right;
-    padding-right: 10px;
-    font-size: 2rem;
-    cursor: pointer;
-    color: white;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	padding-right: 10px;
+	font-size: 2rem;
+	cursor: pointer;
+	color: white;
 
 }
 
 #menu {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    justify-content: space-around;
-    /*
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	justify-content: center;
+	/*
 	transition: transform .3s;
 	transform-origin: left bottom;
 */
-    top: 0;
-    height: 200px;
-    width: 100%;
-    margin: 0;
-    padding-left: 1 0px;
-    text-align: center;
-    background-color: lemonchiffon;
+	top: 0;
+	height: 200px;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	background-color: white;
 
+}
+
+li {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 20px;
+	color: #7D7096;
+
+}
+
+li a {
+	font-size: 16px;
+	color: #707070;
 }
 
 a {
-    text-decoration-line: none;
-    color: black;
-    font-family: monospace;
-    cursor: pointer;
+	text-decoration-line: none;
+	color: black;
+	font-family: monospace;
+	cursor: pointer;
 }
 
 a:hover {
-    color: greenyellow;
+	color: #F2EBEE;
+}
+
+#collapsible {
+	color: #444;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+
+#collapsible:hover {
+	color: #F2EBEE;
+}
+
+#content_collap {
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	color: white;
+	background-color: #9289a5;
+	text-align: center;
+	align-content: center;
+	padding-right: 20px;
+	padding-left: 20px;
+
 }
 
 .mySlides {
-    width: 100vw;
-    height: 70vh;
-    filter: brightness(0.5);
-    left: 0;
-    width: 100vw;
-    filter: brightness(0.5);
-    left: 0;
+	width: 100vw;
+	filter: brightness(0.5);
+	left: 0;
 }
 
-#content_wrapper {}
 
 
 #velkommen_boks {
-    display: flex;
-    margin-bottom: 40px;
-    margin-top: 40px;
+	top: 500px;
+	display: flex;
+	width: 100vw;
+	height: 650px;
+	background-image: url(Billeder/splash_image-kopi.png);
+	background-position: bottom;
 
 }
 
 .velkommen_tekst {
-    background-color: rgba(255, 255, 255, 0.37);
+	align-self: center;
+	height: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
 
-    align-self: center;
-    padding: 20px;
 }
 
 .velkommen_tekst h2 {
-    color: #7D7096;
-    font-size: 30px;
-    text-align: center;
-    color: #7D7096;
-    font-size: 25px;
-    text-align: center;
+	color: #7D7096;
+	font-size: 35px;
+	text-align: center;
 }
 
 .undertekst {
-    text-align: center;
+	text-align: center;
 }
 
 .velkommen_tekst p {
-    color: #7D7096;
-    font-size: 16px;
+	color: #7D7096;
+	font-size: 16px;
 }
 
 iframe {
-    width: 100%;
-    height: 500px;
+	width: 100%;
+	height: 500px;
 }
 
 /*  video  */
 
 .video {
-    background-color: rgba(255, 255, 255, 0.37);
-    height: 300px;
+	background-color: rgba(255, 255, 255, 0.37);
+	height: 400px;
 }
 
 /*      */
@@ -180,102 +216,79 @@ iframe {
 /*Portfolio*/
 
 .portfolio_h2 {
-    color: #7D7096;
-    text-align: center;
+	color: #7D7096;
+	text-align: center;
+	background-color: #F2EBEE;
+	margin: 0;
+	margin-top: 50px;
+	padding-top: 20px;
+	font-size: 35px;
 }
 
 #portfolio {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	background-image: url(Billeder/omg_baggrund-kopi.png);
+	background-position: bottom;
+	padding-bottom: 200px;
+	padding-top: 50px;
 
 }
 
 #portfolio img {
-    width: 200px;
+	width: 200px;
+	margin-right: 5px;
 }
 
 
 .link_til_portfolio {
-    margin-right: 10px;
-    margin-bottom: 10px;
-    text-align: right;
+	position: relative;
+	top: -200px;
+	margin-right: 10px;
+	text-align: right;
+	font-size: 18px;
+	animation: pulse_port 1s infinite;
+	animation-duration: 1.7s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
 
+}
+
+.link_til_portfolio a:hover {
+	color: #7D7096;
+}
+
+@keyframes pulse_port {
+	0% {
+		transform: scale(0.95);
+
+
+	}
+
+
+	100% {
+		transform: scale(1.0);
+
+	}
 }
 
 
 
 
-/*    priser    */
-
-
-#priser {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-}
-
-.priser_knap {
-    align-self: center;
-    width: 250px;
-    height: 50px;
-    border: none;
-    border-radius: 100px;
-    padding: 10px;
-    margin-top: 30px;
-    background-color: #9289a5;
-    color: white;
-    font-size: 20px;
-    font-family: 'Abril Fatface', cursive;
-    align-self: center;
-    width: 250px;
-    height: 50px;
-    border: none;
-    border-radius: 100px;
-    padding: 10px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    background-color: #9289a5;
-    color: white;
-    font-size: 20px;
-    font-family: 'Abril Fatface', cursive;
-}
-
-
-.priser_knap:hover {
-    background-color: #7d7096;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.26);
-    cursor: pointer;
-}
-
-
-
-#pris_vindue {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    align-content: center;
-    justify-content: center;
-    color: white;
-    padding: 30px;
-    width: 400px;
-    background-color: #9289a5;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.26);
-}
 
 .luk_knap {
-    width: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 30px;
-    align-self: center
+	width: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 30px;
+	align-self: center
 }
 
 .luk_knap:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 
@@ -284,46 +297,47 @@ iframe {
 /*     anmeldelser    */
 
 .skull {
-    width: 30px;
-    margin: 5px;
+	width: 30px;
+	margin: 5px;
 }
 
 #anmeldelser {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .anmeldelse {
-    width: 100%;
-
-    text-align: center;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.37);
-    margin-bottom: 30px;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	padding-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.37);
+	margin-bottom: 30px;
+	margin: 20px;
+	padding: 10px;
 }
 
 .anmeldelser_h2 {
-    text-align: center;
-    color: #7D7096;
+	text-align: center;
+	color: #7D7096;
+	font-size: 35px;
 }
 
 #anmeldelser p {
-    margin: 20px;
+	margin: 20px;
 }
 
 .anmeldelse1_person p {
-    font-size: 13px;
-    font-style: italic;
-    color: #7D7096;
+	font-size: 13px;
+	font-style: italic;
+	color: #7D7096;
 
 }
 
 .anmeldelse_billeder {
-    width: 100%;
+	width: 100%;
 
 }
 
@@ -332,154 +346,149 @@ iframe {
 /*     kontakt    */
 
 .kontakt_tekst {
-    background-color: rgba(255, 255, 255, 0.37);
-    height: 250px;
+	background-color: rgba(255, 255, 255, 0.37);
+	height: 250px;
 }
 
 .kontakt_tekst h2 {
-    color: #7D7096;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 40px;
+	color: #7D7096;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 40px;
 }
 
 .kontakt_tekst p {
-    padding-left: 30px;
-    padding-right: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],
 select,
 textarea {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    background-color: rgba(255, 255, 255, 0.71);
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	background-color: rgba(255, 255, 255, 0.71);
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #7D7096;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+	background-color: #7D7096;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+	background-color: #45a049;
 }
 
 /* Add a background color and some padding around the form */
 .container_kontakt {
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.37);
-    padding: 20px;
-    font-family: 'Raleway', sans-serif;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.37);
+	padding: 20px;
+	font-family: 'Raleway', sans-serif;
 }
 
 .googlemaps {
-    filter: grayscale(100%);
-    height: 300px;
-    margin-bottom: 30px;
+	filter: grayscale(100%);
+	height: 300px;
+	margin-bottom: 30px;
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #7d7096;
-    height: 150px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #7d7096;
+	height: 150px;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 30px;
 }
 
 .social {
-    width: 200px;
+	width: 200px;
 }
 
 .logo {
-    width: 200px;
-    text-align: center;
-    color: white;
+	width: 200px;
+	text-align: center;
+	color: white;
 }
 
 .info {
-    width: 200px;
-    text-align: right;
+	width: 200px;
+	text-align: right;
 }
 
 .info p {
-    padding: 0;
-    margin: 4px;
+	padding: 0;
+	margin: 4px;
 }
 
 /*Portfolio site*/
 
 .go_back {
-    margin-left: 100px;
-    padding: 10px;
-    color: white;
-    background-color: #7d7096;
-    padding: 10px;
-    color: white;
+	padding: 10px;
+	color: white;
+
 }
 
 .go_back img {
-    width: 35px;
-    animation: pulse 2s infinite;
-    animation-duration: 1.7s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
+	width: 35px;
+	animation: pulse 2s infinite;
+	animation-duration: 1.7s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
 }
 
 @keyframes pulse {
-    0% {
-        transform: scale(0.95);
+	0% {
+		transform: scale(0.95);
 
 
-    }
+	}
 
 
-    100% {
-        transform: scale(1.2);
+	100% {
+		transform: scale(1.2);
 
-    }
+	}
 }
 
 
 
 
 .portfolio_overskrift {
-    text-align: center;
-    color: white;
-    text-align: center;
-    color: white;
-    padding-left: 40px;
+	text-align: center;
+	color: white;
+	padding-left: 40px;
 }
 
 
 
 #portfolio_1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 
 }
 
 #portfolio_1 img {
-    width: 240px;
-    padding-bottom: 5px;
+	width: 240px;
+	padding-bottom: 5px;
 }
 
 
@@ -487,153 +496,174 @@ footer {
 
 @media only screen and (min-width: 700px) {
 
-    #menuknap {
-        visibility: hidden;
+	#menuknap {
+		visibility: hidden;
 
 
 
-    }
+	}
 
 
-    #menu {
-        display: flex;
-        position: fixed;
-        flex-direction: row;
-        list-style-type: none;
-        justify-content: space-around;
-        top: 0;
-        width: 100%;
-        height: 40px;
-        margin: 0;
-        padding-left: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
+	#menu {
+		display: flex;
+		position: fixed;
+		flex-direction: row;
+		list-style-type: none;
+		justify-content: space-between;
+		top: 0;
+		width: 100%;
+		height: 40px;
+		margin: 0;
+		padding-left: 20px;
+		padding-right: 20px;
 
-    }
+	}
 
-    #menu.hidden {
-        transform: translateX(0);
-        opacity: 1;
-        width: 100%;
+	li {
+		font-family: 'Abril Fatface', cursive;
+		font-size: 25px;
+	}
 
-    }
+	li a {
+		font-size: 16px;
+	}
 
-    #content_wrapper {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
+	.menu1 {
+		margin-left: 300px;
+	}
 
+	#menu.hidden {
+		transform: translateX(0);
+		opacity: 1;
+		width: 100%;
 
-    .velkommen_tekst {
-        width: 100%;
-        padding-right: 200px;
-        padding-left: 200px;
-    }
+	}
 
-    .mySlides {
-        width: 100vw;
-        height: 100vh;
-        filter: brightness(0.5);
-        left: 0;
-    }
+	#collapsible {
+		color: #444;
+		cursor: pointer;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+	}
 
-    #portfolio_1 {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
+	#content_collap {
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+		position: fixed;
+		margin-top: 40px;
+		width: 100%;
+		height: auto;
+		color: white;
+		padding-left: 200px;
+		padding-right: 200px;
+		padding-bottom: 100px;
+		background-color: #9289a5;
+		text-align: center;
+		align-content: center;
 
-    #portfolio_1 img {
-        width: 400px;
-        padding-bottom: 10px;
-    }
-
-    .header_overskrift {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        top: 60px;
-        text-align: center;
-        color: white;
-        font-size: 40px;
-    }
-
-
-
-    .velkommen_tekst h2 {
-        color: #7D7096;
-        font-size: 35px;
-        text-align: center;
-    }
-
-    .mySlides {
-        width: 100vw;
-        filter: brightness(0.5);
-        left: 0;
-    }
-
-    origin/master #portfolio img {
-        width: 340px;
-    }
-
-    #pris_vindue {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        align-content: center;
-        justify-content: center;
-        color: white;
-        padding: 30px;
-        width: 800px;
-        background-color: #9289a5;
-    }
-
-    .semerehertekst {}
-
-    #anmeldelser {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
-    }
+	}
 
 
-    .anmeldelse {
-        text-align: center;
-        align-items: center;
-        width: 300px;
-        background-color: rgba(255, 255, 255, 0.37);
-        margin-bottom: 100px;
 
-    }
+	.velkommen_tekst {
+		padding-left: 200px;
+		padding-right: 200px;
+		line-height: 25px;
+		padding-top: 50px;
 
-    .anmeldelse_txt {
-        height: 60%;
+	}
 
-    }
+	.velkommen_tekst h2 {
+		color: #7D7096;
+		font-size: 35px;
+		text-align: center;
+	}
 
-    .anmeldelse p {
-        font-size: 12px;
-        height: 100px;
-    }
+	.link_til_portfolio {
+		padding-right: 200px;
+		top: -230px;
+	}
 
-    .kontakt_tekst {
-        padding-right: 150px;
-        padding-left: 150px;
-    }
+	.mySlides {
+		width: 100vw;
+		filter: brightness(0.5);
+		left: 0;
+	}
 
-    .container_kontakt {
-        padding-right: 200px;
-        padding-left: 200px;
-    }
+	#video_container {
+		margin-left: 200px;
+		margin-right: 200px;
+	}
 
-    .kontakt_tekst {
-        background-color: rgba(255, 255, 255, 0.37);
-        height: 250px;
-        padding-top: 30px;
-    }
+	#portfolio {
+		width: 100%;
+		padding-left: 200px;
+		padding-right: 200px;
+		padding-bottom: 250px;
+	}
+
+
+	#portfolio_1 {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	#portfolio_1 img {
+		width: 400px;
+		padding-bottom: 10px;
+	}
+
+	#portfolio img {
+		width: 340px;
+	}
+
+
+
+	#anmeldelser {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-left: 200px;
+		padding-right: 200px;
+
+	}
+
+
+	.anmeldelse {
+		text-align: center;
+		align-items: center;
+		width: 300px;
+		background-color: rgba(255, 255, 255, 0.37);
+		margin-bottom: 30px;
+
+	}
+
+	.anmeldelse_txt {
+		height: 60%;
+
+	}
+
+	.anmeldelse p {
+		font-size: 12px;
+		height: 100px;
+	}
+
+	.kontakt_tekst {
+		padding-right: 150px;
+		padding-left: 150px;
+	}
+
+	.container_kontakt {
+		padding-right: 200px;
+		padding-left: 200px;
+	}
+
 
 }
 
@@ -643,26 +673,22 @@ footer {
 
 @media only screen and (min-width: 1200px) {
 
-    #content_wrapper {
-        margin-left: 200px;
-        margin-right: 200px;
-    }
-
-    .header_overskrift {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        top: 150px;
-        text-align: center;
-        color: white;
-        font-size: 40px;
-    }
 
 
-    .velkommen_tekst {
-        width: 100%;
-        padding-right: 100px;
-        padding-left: 100px;
-    }
+	.header_overskrift {
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		top: 150px;
+		text-align: center;
+		color: white;
+		font-size: 40px;
+	}
+
+
+	.velkommen_tekst {
+		width: 100%;
+
+	}
 
 }
