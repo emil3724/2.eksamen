@@ -39,7 +39,6 @@ p {
 }
 
 .header_overskrift {
-<<<<<<< HEAD
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -47,15 +46,13 @@ p {
     text-align: center;
     color: white;
     font-size: 40px;
-=======
-	position: absolute;
-	z-index: 1;
-	width: 100%;
-	top: 40px;
-	text-align: center;
-	color: white;
-	font-size: 20px;
->>>>>>> origin/master
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
 }
 
 #content_wrapper {
@@ -72,15 +69,11 @@ p {
 }
 
 nav {
-<<<<<<< HEAD
     z-index: 2;
     width: 100vw;
-=======
-	z-index: 2;
-	width: 100vw;
-	font-size: 16px;
->>>>>>> origin/master
-
+    z-index: 2;
+    width: 100vw;
+    font-size: 16px;
 }
 
 #menuknap {
@@ -126,16 +119,13 @@ a:hover {
 }
 
 .mySlides {
-<<<<<<< HEAD
     width: 100vw;
     height: 70vh;
     filter: brightness(0.5);
     left: 0;
-=======
-	width: 100vw;
-	filter: brightness(0.5);
-	left: 0;
->>>>>>> origin/master
+    width: 100vw;
+    filter: brightness(0.5);
+    left: 0;
 }
 
 #content_wrapper {}
@@ -156,15 +146,12 @@ a:hover {
 }
 
 .velkommen_tekst h2 {
-<<<<<<< HEAD
     color: #7D7096;
     font-size: 30px;
     text-align: center;
-=======
-	color: #7D7096;
-	font-size: 25px;
-	text-align: center;
->>>>>>> origin/master
+    color: #7D7096;
+    font-size: 25px;
+    text-align: center;
 }
 
 .undertekst {
@@ -232,7 +219,6 @@ iframe {
 }
 
 .priser_knap {
-<<<<<<< HEAD
     align-self: center;
     width: 250px;
     height: 50px;
@@ -244,21 +230,18 @@ iframe {
     color: white;
     font-size: 20px;
     font-family: 'Abril Fatface', cursive;
-=======
-	align-self: center;
-	width: 250px;
-	height: 50px;
-	border: none;
-	border-radius: 100px;
-	padding: 10px;
-	margin-top: 30px;
-	margin-bottom: 50px;
-	background-color: #9289a5;
-	color: white;
-	font-size: 20px;
-	font-family: 'Abril Fatface', cursive;
->>>>>>> origin/master
-
+    align-self: center;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: #9289a5;
+    color: white;
+    font-size: 20px;
+    font-family: 'Abril Fatface', cursive;
 }
 
 
@@ -443,52 +426,45 @@ footer {
 /*Portfolio site*/
 
 .go_back {
-<<<<<<< HEAD
     margin-left: 100px;
     padding: 10px;
     color: white;
     background-color: #7d7096;
-=======
-	padding: 10px;
-	color: white;
->>>>>>> origin/master
-
+    padding: 10px;
+    color: white;
 }
 
 .go_back img {
-	width: 35px;
-	animation: pulse 2s infinite;
-	animation-duration: 1.7s;
-	animation-timing-function: ease-in;
-	animation-direction: alternate;
+    width: 35px;
+    animation: pulse 2s infinite;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0.95);
+    0% {
+        transform: scale(0.95);
 
 
-	}
+    }
 
 
-	100% {
-		transform: scale(1.2);
+    100% {
+        transform: scale(1.2);
 
-	}
+    }
 }
 
 
 
 
 .portfolio_overskrift {
-<<<<<<< HEAD
     text-align: center;
     color: white;
-=======
-	text-align: center;
-	color: white;
-	padding-left: 40px;
->>>>>>> origin/master
+    text-align: center;
+    color: white;
+    padding-left: 40px;
 }
 
 
@@ -554,7 +530,6 @@ footer {
         padding-left: 200px;
     }
 
-<<<<<<< HEAD
     .mySlides {
         width: 100vw;
         height: 100vh;
@@ -571,34 +546,32 @@ footer {
         width: 400px;
         padding-bottom: 10px;
     }
-=======
-	.header_overskrift {
-		position: absolute;
-		z-index: 1;
-		width: 100%;
-		top: 60px;
-		text-align: center;
-		color: white;
-		font-size: 40px;
-	}
+
+    .header_overskrift {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 60px;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+    }
 
 
 
+    .velkommen_tekst h2 {
+        color: #7D7096;
+        font-size: 35px;
+        text-align: center;
+    }
 
-	.velkommen_tekst h2 {
-		color: #7D7096;
-		font-size: 35px;
-		text-align: center;
-	}
+    .mySlides {
+        width: 100vw;
+        filter: brightness(0.5);
+        left: 0;
+    }
 
-	.mySlides {
-		width: 100vw;
-		filter: brightness(0.5);
-		left: 0;
-	}
->>>>>>> origin/master
-
-    #portfolio img {
+    origin/master #portfolio img {
         width: 340px;
     }
 
@@ -675,21 +648,21 @@ footer {
         margin-right: 200px;
     }
 
-	.header_overskrift {
-		position: absolute;
-		z-index: 1;
-		width: 100%;
-		top: 150px;
-		text-align: center;
-		color: white;
-		font-size: 40px;
-	}
+    .header_overskrift {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 150px;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+    }
 
 
-	.velkommen_tekst {
-		width: 100%;
-		padding-right: 100px;
-		padding-left: 100px;
-	}
+    .velkommen_tekst {
+        width: 100%;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
 
 }
