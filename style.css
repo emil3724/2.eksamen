@@ -42,10 +42,10 @@ p {
 	position: absolute;
 	z-index: 1;
 	width: 100%;
-	top: 190px;
+	top: 40px;
 	text-align: center;
 	color: white;
-	font-size: 40px;
+	font-size: 20px;
 }
 
 #content_wrapper {
@@ -64,6 +64,7 @@ p {
 nav {
 	z-index: 2;
 	width: 100vw;
+	font-size: 16px;
 
 }
 
@@ -111,7 +112,6 @@ a:hover {
 
 .mySlides {
 	width: 100vw;
-	height: 70vh;
 	filter: brightness(0.5);
 	left: 0;
 }
@@ -135,7 +135,7 @@ a:hover {
 
 .velkommen_tekst h2 {
 	color: #7D7096;
-	font-size: 30px;
+	font-size: 25px;
 	text-align: center;
 }
 
@@ -211,6 +211,7 @@ iframe {
 	border-radius: 100px;
 	padding: 10px;
 	margin-top: 30px;
+	margin-bottom: 50px;
 	background-color: #9289a5;
 	color: white;
 	font-size: 20px;
@@ -400,17 +401,40 @@ footer {
 /*Portfolio site*/
 
 .go_back {
-	margin-left: 100px;
 	padding: 10px;
 	color: white;
-	background-color: #7d7096;
 
 }
+
+.go_back img {
+	width: 35px;
+	animation: pulse 2s infinite;
+	animation-duration: 1.7s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+
+
+	}
+
+
+	100% {
+		transform: scale(1.2);
+
+	}
+}
+
+
 
 
 .portfolio_overskrift {
 	text-align: center;
 	color: white;
+	padding-left: 40px;
 }
 
 
@@ -469,16 +493,27 @@ footer {
 		margin-right: 100px;
 	}
 
-
-	.velkommen_tekst {
+	.header_overskrift {
+		position: absolute;
+		z-index: 1;
 		width: 100%;
-		padding-right: 200px;
-		padding-left: 200px;
+		top: 60px;
+		text-align: center;
+		color: white;
+		font-size: 40px;
+	}
+
+
+
+
+	.velkommen_tekst h2 {
+		color: #7D7096;
+		font-size: 35px;
+		text-align: center;
 	}
 
 	.mySlides {
 		width: 100vw;
-		height: 100vh;
 		filter: brightness(0.5);
 		left: 0;
 	}
@@ -561,6 +596,23 @@ footer {
 	#content_wrapper {
 		margin-left: 200px;
 		margin-right: 200px;
+	}
+
+	.header_overskrift {
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		top: 150px;
+		text-align: center;
+		color: white;
+		font-size: 40px;
+	}
+
+
+	.velkommen_tekst {
+		width: 100%;
+		padding-right: 100px;
+		padding-left: 100px;
 	}
 
 }
