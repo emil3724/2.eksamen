@@ -3,7 +3,9 @@ window.addEventListener("load", sidenVises);
 function sidenVises() {
 	console.log("sidenVises");
 	document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-	document.querySelector(".priser_knap").addEventListener("click", visPriser);
+	document.querySelector("#collapsible").addEventListener("click", visPriser);
+
+
 }
 
 let side;
@@ -50,14 +52,18 @@ function toggleMenu() {
 	}
 }
 
+
+
+
+
 function visPriser() {
-	document.querySelector("#pris_vindue").classList.remove("hidden");
+	document.querySelector("#content_collap").classList.remove("hidden");
 	document.querySelector(".luk_knap").addEventListener("click", skjulPriser);
 
 }
 
 function skjulPriser() {
-	document.querySelector("#pris_vindue").classList.add("hidden");
+	document.querySelector("#content_collap").classList.add("hidden");
 }
 
 

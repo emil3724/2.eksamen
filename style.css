@@ -93,10 +93,18 @@ nav {
 	height: 200px;
 	width: 100%;
 	margin: 0;
-	padding-left: 1 0px;
 	text-align: center;
 	background-color: lemonchiffon;
 
+}
+
+li {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 20px;
+}
+
+li a {
+	font-size: 16px;
 }
 
 a {
@@ -108,6 +116,32 @@ a {
 
 a:hover {
 	color: greenyellow;
+}
+
+#collapsible {
+	color: #444;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+
+#content_collap {
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	color: white;
+	background-color: #9289a5;
+	text-align: center;
+	align-content: center;
+	padding-right: 20px;
+	padding-left: 20px;
+
 }
 
 .mySlides {
@@ -187,7 +221,26 @@ iframe {
 	margin-right: 10px;
 	margin-bottom: 10px;
 	text-align: right;
+	font-size: 18px;
+	animation: pulse_port 1s infinite;
+	animation-duration: 1.7s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
 
+}
+
+@keyframes pulse_port {
+	0% {
+		transform: scale(0.95);
+
+
+	}
+
+
+	100% {
+		transform: scale(1.0);
+
+	}
 }
 
 
@@ -470,21 +523,61 @@ footer {
 		position: fixed;
 		flex-direction: row;
 		list-style-type: none;
-		justify-content: space-around;
+		justify-content: space-between;
 		top: 0;
 		width: 100%;
 		height: 40px;
 		margin: 0;
-		padding-left: 0;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
 
+	}
+
+	li {
+		font-family: 'Abril Fatface', cursive;
+		font-size: 25px;
+	}
+
+	li a {
+		font-size: 16px;
+	}
+
+	.menu1 {
+		margin-left: 300px;
 	}
 
 	#menu.hidden {
 		transform: translateX(0);
 		opacity: 1;
 		width: 100%;
+
+	}
+
+	#collapsible {
+		color: #444;
+		cursor: pointer;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+	}
+
+	#content_collap {
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+		position: fixed;
+		margin-top: 40px;
+		width: 100%;
+		height: auto;
+		color: white;
+		padding-left: 200px;
+		padding-right: 200px;
+		padding-bottom: 100px;
+		background-color: #9289a5;
+		text-align: center;
+		align-content: center;
 
 	}
 
@@ -532,17 +625,7 @@ footer {
 		width: 340px;
 	}
 
-	#pris_vindue {
-		display: flex;
-		flex-direction: column;
-		position: absolute;
-		align-content: center;
-		justify-content: center;
-		color: white;
-		padding: 30px;
-		width: 800px;
-		background-color: #9289a5;
-	}
+
 
 	#anmeldelser {
 		width: 100%;
