@@ -81,7 +81,6 @@ nav {
     font-size: 2rem;
     cursor: pointer;
     color: white;
-
 }
 
 #menu {
@@ -155,6 +154,8 @@ a:hover {
 
 }
 
+/*   slideshow   */
+
 .mySlides {
     width: 100vw;
     filter: brightness(0.5);
@@ -162,6 +163,7 @@ a:hover {
 }
 
 
+/*   velkommen   */
 
 #velkommen_boks {
     top: 500px;
@@ -170,7 +172,6 @@ a:hover {
     height: 650px;
     background-image: url(Billeder/splash_image-kopi.png);
     background-position: bottom;
-
 }
 
 .velkommen_tekst {
@@ -244,7 +245,7 @@ iframe {
 .link_til_portfolio {
     position: relative;
     top: -200px;
-    margin-right: 10px;
+    margin-right: 48px;
     text-align: right;
     font-size: 18px;
     animation: pulse_port 1s infinite;
@@ -261,18 +262,12 @@ iframe {
 @keyframes pulse_port {
     0% {
         transform: scale(0.95);
-
-
     }
-
 
     100% {
         transform: scale(1.0);
-
     }
 }
-
-
 
 
 
@@ -303,13 +298,14 @@ iframe {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 60px;
 }
 
 .anmeldelse {
     width: 100%;
     text-align: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     background-color: rgba(255, 255, 255, 0.37);
     margin-bottom: 30px;
     margin: 20px;
@@ -351,7 +347,7 @@ iframe {
     color: #7D7096;
     font-size: 30px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .kontakt_tekst p {
@@ -406,27 +402,39 @@ input[type=submit]:hover {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #7d7096;
-    height: 150px;
-    padding-left: 80px;
-    padding-right: 80px;
+    height: 160px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 30px;
 }
 
 .social {
-    width: 200px;
+    width: 30px;
+    margin-right: 50px;
+}
+
+.some {
+    padding-bottom: 5px;
 }
 
 .logo {
-    width: 200px;
+    width: 110px;
     text-align: center;
     color: white;
+}
+
+.logo h2 {
+    margin: 0;
+    padding: 0;
 }
 
 .info {
     width: 200px;
     text-align: right;
+    font-size: 0.8rem;
+    margin-top: 20px;
 }
 
 .info p {
@@ -491,12 +499,105 @@ footer {
 
 /*WEB MEDIUM*/
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 690px) {
 
-    #menuknap {
-        visibility: hidden;
+    .hidden {
+        display: none;
+        transform: scale(0);
+        transform: translateY(100%);
+        opacity: 0;
+        text-decoration: none;
     }
 
+    nav {
+        z-index: 2;
+        width: 100vw;
+        font-size: 16px;
+    }
+
+    #menuknap {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        text-align: left;
+        padding-right: 10px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: center;
+        /*
+	transition: transform .3s;
+	transform-origin: left bottom;
+*/
+        top: 0;
+        height: 290px;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        background-color: white;
+
+    }
+
+    li {
+        font-family: 'Abril Fatface', cursive;
+        font-size: 20px;
+        color: #7D7096;
+
+    }
+
+    li a {
+        font-size: 16px;
+        color: #707070;
+    }
+
+    a {
+        text-decoration-line: none;
+        color: black;
+        font-family: monospace;
+        cursor: pointer;
+    }
+
+    a:hover {
+        color: #F2EBEE;
+    }
+
+    #collapsible {
+        color: #444;
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+
+    #collapsible:hover {
+        color: #F2EBEE;
+    }
+
+    #content_collap {
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        color: white;
+        background-color: #9289a5;
+        text-align: center;
+        align-content: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+    /*
     #menu {
         display: flex;
         position: fixed;
@@ -523,66 +624,15 @@ footer {
     .menu_knap3 {
         padding-left: 80px
     }
+*/
 
-    li {
-        font-family: 'Abril Fatface', cursive;
-        font-size: 25px;
-    }
 
-    li a {
-        font-size: 16px;
-    }
+    /*     velkommen     */
 
-    .menu1 {
-        margin-left: 300px;
-    }
-
-    #menu.hidden {
-        transform: translateX(0);
-        opacity: 1;
-        width: 100%;
-
-    }
-
-    #collapsible {
-        color: #444;
-        cursor: pointer;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-    }
-
-    #content_collap {
-        display: flex;
-        flex-direction: column;
-        z-index: 2;
-        position: fixed;
-        margin-top: 40px;
-        width: 100%;
-        height: auto;
-        color: white;
-        padding-left: 350px;
-        padding-right: 350px;
-        padding-bottom: 100px;
-        background-color: #9289a5;
-        align-content: center;
-        line-height: 1.4rem;
-    }
-
-    #content_collap h2 {
-        text-align: center;
-        padding-top: 40px;
-    }
-
-    #content_collap p {
-        text-align: justify;
-    }
 
     .velkommen_tekst {
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 100px;
+        padding-right: 100px;
         line-height: 25px;
         padding-top: 70px;
     }
@@ -594,14 +644,12 @@ footer {
     }
 
     .velkommen_tekst p {
-        padding-right: 100px;
-        padding-left: 100px;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: justify;
     }
 
-    .link_til_portfolio {
-        padding-right: 200px;
-        top: -230px;
-    }
+    /*    */
 
     .mySlides {
         width: 100vw;
@@ -611,18 +659,231 @@ footer {
     }
 
     #video_container {
-        margin-left: 200px;
-        margin-right: 200px;
+        margin-left: 50px;
+        margin-right: 50px;
         padding-bottom: 50px;
     }
 
+
+    /*    portfolio   */
+
+
     #portfolio {
         width: 100%;
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 50px;
+        padding-right: 50px;
         padding-bottom: 250px;
     }
 
+    .link_til_portfolio {
+        padding-right: 10px;
+        top: -230px;
+    }
+
+    #portfolio_1 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #portfolio_1 img {
+        width: 400px;
+        padding-bottom: 10px;
+    }
+
+    #portfolio img {
+        width: 290px;
+    }
+
+    .portfolio_h2 {
+        padding-top: 90px;
+    }
+
+
+    /*    anmeldelser    */
+
+
+    #anmeldelser {
+        /*        width: 100vh;
+        */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 80px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .anmeldelse {
+        text-align: center;
+        align-items: center;
+        width: 700px;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.37);
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+
+    .anmeldelse_txt {
+        height: 55%;
+    }
+
+    .anmeldelse p {
+        font-size: 15px;
+        height: 100px;
+        line-height: 1.5;
+    }
+
+    .skull {
+        padding-top: 30px;
+    }
+
+
+    /*     kontakt   */
+
+
+    .kontakt_tekst {
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-top: 50px;
+    }
+
+    .container_kontakt {
+        padding-right: 60px;
+        padding-left: 60px;
+        padding-bottom: 50px;
+        padding-top: 40px;
+    }
+
+    .googlemaps {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /*     footer    */
+
+
+    .social {
+        display: flex;
+    }
+
+    .some {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        margin-top: 59px;
+    }
+
+    .logo h1 {
+        margin-top: 40px;
+        padding-left: 100px;
+        text-align: center;
+    }
+
+    footer {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #7d7096;
+        height: 150px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 30px;
+        padding: 0;
+    }
+
+    .info {
+        width: 300px;
+        text-align: right;
+        font-size: 1rem;
+        margin-top: 40px;
+    }
+
+
+}
+
+
+
+/*WEB LARGE*/
+
+@media only screen and (min-width: 1200px) {
+
+    #menu {
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-around;
+        top: 0;
+        width: 100%;
+        height: 50px;
+        margin: 0;
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+
+    .menu_knap1 {
+        padding-left: 780px
+    }
+
+    .menu_knap2 {
+        padding-left: 80px
+    }
+
+    .menu_knap3 {
+        padding-left: 80px
+    }
+
+    .header_overskrift {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 150px;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+    }
+
+
+    /*  velkommen  */
+
+
+    .velkommen_tekst {
+        padding-left: 250px;
+        padding-right: 250px;
+        line-height: 25px;
+        padding-top: 70px;
+    }
+
+    .velkommen_tekst h2 {
+        color: #7D7096;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .velkommen_tekst p {
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: justify;
+    }
+
+
+    /*     portfolio  */
+
+    #portfolio {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 250px;
+    }
+
+    .link_til_portfolio {
+        padding-right: 160px;
+        top: -230px;
+    }
 
     #portfolio_1 {
         padding-left: 100px;
@@ -643,50 +904,66 @@ footer {
     }
 
 
+
+    /*    anmeldelser  */
+
+
     #anmeldelser {
-        width: 100%;
+        width: ;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
-        padding-left: 200px;
-        padding-right: 200px;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .anmeldelse {
         text-align: center;
         align-items: center;
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         background-color: rgba(255, 255, 255, 0.37);
         margin-bottom: 30px;
+        padding-bottom: 20px;
     }
 
     .anmeldelse_txt {
         height: 55%;
-        padding-top: 10px;
     }
 
     .anmeldelse p {
-        font-size: 12px;
+        font-size: 15px;
         height: 100px;
+        line-height: 1.5;
     }
 
     .skull {
-        padding-top: 15px;
+        padding-top: 30px;
     }
 
+
+    /*    kontakt    */
+
+
     .kontakt_tekst {
-        padding-right: 240px;
-        padding-left: 240px;
-        padding-top: 5px;
+        padding-right: 300px;
+        padding-left: 300px;
+        padding-top: 50px;
+    }
+
+    .kontakt_tekst p {
+        line-height: 1.4;
+        padding-left: 70px;
+        padding-right: 70px;
     }
 
     .container_kontakt {
-        padding-right: 300px;
-        padding-left: 300px;
+        padding-right: 350px;
+        padding-left: 350px;
         padding-bottom: 50px;
+        padding-top: 40px;
     }
 
     .googlemaps {
@@ -694,32 +971,6 @@ footer {
         padding: 0;
     }
 
-
-}
-
-
-
-/*WEB LARGE*/
-
-@media only screen and (min-width: 1200px) {
-
-
-
-    .header_overskrift {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        top: 150px;
-        text-align: center;
-        color: white;
-        font-size: 40px;
-    }
-
-
-    .velkommen_tekst {
-        width: 100%;
-
-    }
 
 
     /*     footer     */
@@ -733,15 +984,32 @@ footer {
         width: 50px;
         height: 50px;
         margin-right: 20px;
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
     .logo h1 {
-        margin-top: 30px;
+        margin-top: 40px;
+        padding-left: 90px;
     }
 
-    footer p {
+    footer {
         color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #7d7096;
+        height: 150px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 30px;
+        padding: 0;
+    }
+
+    .info {
+        width: 300px;
+        text-align: right;
+        font-size: 1rem;
+        margin-top: 45px;
     }
 
 }
