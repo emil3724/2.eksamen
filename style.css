@@ -1,10 +1,10 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background-color: #CBC0C5;
+	margin: 0;
+	background-color: #CBC0C5;
 
 }
 
@@ -22,192 +22,192 @@ html {
 */
 
 img {
-    width: 100%;
+	width: 100%;
 }
 
 h2 {
-    font-family: 'Rye', cursive;
+	font-family: 'Abril Fatface', cursive;
 }
 
 h3 {
-    font-family: 'Abril Fatface', cursive;
+	font-family: 'Abril Fatface', cursive;
 }
 
 p {
-    /*    font-family: 'Raleway', sans-serif;*/
-    font-family: 'Dosis', sans-serif;
+	/*    font-family: 'Raleway', sans-serif;*/
+	font-family: 'Dosis', sans-serif;
 }
 
 .sticky {
-    position: fixed;
+	position: fixed;
 }
 
 .header_overskrift {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    top: 40px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	top: 40px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
 }
 
 #content_wrapper {
-    /*
+	/*
 		margin-left: 30px;
 		margin-right: 30px;
 */
 }
 
 .hidden {
-    display: none;
-    transform: scale(0);
-    transform: translateY(100%);
-    opacity: 0;
-    text-decoration: none;
+	display: none;
+	transform: scale(0);
+	transform: translateY(100%);
+	opacity: 0;
+	text-decoration: none;
 }
 
 nav {
-    z-index: 2;
-    width: 100vw;
-    font-size: 16px;
+	z-index: 2;
+	width: 100vw;
+	font-size: 16px;
 }
 
 #menuknap {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    text-align: left;
-    padding-right: 10px;
-    font-size: 2rem;
-    cursor: pointer;
-    color: white;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	padding-right: 10px;
+	font-size: 2rem;
+	cursor: pointer;
+	color: white;
 }
 
 #menu {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    justify-content: center;
-    /*
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	justify-content: center;
+	/*
 	transition: transform .3s;
 	transform-origin: left bottom;
 */
-    top: 0;
-    height: 200px;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    background-color: white;
+	top: 0;
+	height: 200px;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	background-color: white;
 
 }
 
 li {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 20px;
-    color: #7D7096;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 20px;
+	color: #7D7096;
 
 }
 
 li a {
-    font-size: 16px;
-    color: #707070;
+	font-size: 16px;
+	color: #707070;
 }
 
 a {
-    text-decoration-line: none;
-    color: black;
-    font-family: monospace;
-    cursor: pointer;
+	text-decoration-line: none;
+	color: black;
+	font-family: monospace;
+	cursor: pointer;
 }
 
 a:hover {
-    color: #F2EBEE;
+	color: #F2EBEE;
 }
 
 #collapsible {
-    color: #444;
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+	color: #444;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
 }
 
 #collapsible:hover {
-    color: #F2EBEE;
+	color: #F2EBEE;
 }
 
 #content_collap {
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    color: white;
-    background-color: #9289a5;
-    text-align: center;
-    align-content: center;
-    padding-right: 20px;
-    padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	color: white;
+	background-color: #9289a5;
+	text-align: center;
+	align-content: center;
+	padding-right: 20px;
+	padding-left: 20px;
 
 }
 
 /*   slideshow   */
 
 .mySlides {
-    width: 100vw;
-    filter: brightness(0.5);
-    left: 0;
+	width: 100vw;
+	filter: brightness(0.5);
+	left: 0;
 }
 
 
 /*   velkommen   */
 
 #velkommen_boks {
-    top: 500px;
-    display: flex;
-    width: 100vw;
-    height: 650px;
-    background-image: url(Billeder/splash_image-kopi.png);
-    background-position: bottom;
+	top: 500px;
+	width: 100vw;
+	height: 750px;
+	background-image: url(Billeder/splash_image-kopi.png);
+	background-position: bottom;
+
 }
 
 .velkommen_tekst {
-    align-self: center;
-    height: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
+	align-self: center;
+	padding-left: 20px;
+	padding-right: 20px;
+
 
 }
 
 .velkommen_tekst h2 {
-    /*    color: #7D7096;*/
-    font-size: 3rem;
-    text-align: center;
+	/*    color: #7D7096;*/
+	font-size: 2.5rem;
+	text-align: center;
 }
 
 .undertekst {
-    text-align: center;
+	text-align: center;
 }
 
 .velkommen_tekst p {
-    color: #7D7096;
-    font-size: 1.2rem;
+	color: #7D7096;
+	font-size: 1.2rem;
 }
 
 iframe {
-    width: 100%;
-    height: 500px;
+	width: 100%;
+	height: 500px;
 }
 
 /*  video  */
 
 .video {
-    background-color: rgba(255, 255, 255, 0.37);
-    height: 400px;
+	background-color: white;
+	height: 400px;
 }
 
 /*      */
@@ -215,73 +215,73 @@ iframe {
 /*Portfolio*/
 
 .portfolio_h2 {
-    color: #7D7096;
-    text-align: center;
-    background-color: #F2EBEE;
-    margin: 0;
-    margin-top: 50px;
-    padding-top: 20px;
-    font-size: 35px;
+	color: #7D7096;
+	text-align: center;
+	background-color: #F2EBEE;
+	margin: 0;
+	margin-top: 50px;
+	padding-top: 20px;
+	font-size: 35px;
 }
 
 #portfolio {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    background-image: url(Billeder/omg_baggrund-kopi.png);
-    background-position: bottom;
-    padding-bottom: 200px;
-    padding-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	background-image: url(Billeder/omg_baggrund-kopi.png);
+	background-position: bottom;
+	padding-bottom: 200px;
+	padding-top: 50px;
 
 }
 
 #portfolio img {
-    width: 200px;
-    margin-right: 5px;
+	width: 200px;
+	margin-right: 5px;
 }
 
 
 .link_til_portfolio {
-    position: relative;
-    top: -200px;
-    margin-right: 48px;
-    text-align: right;
-    font-size: 18px;
-    animation: pulse_port 1s infinite;
-    animation-duration: 1.7s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
+	position: relative;
+	top: -200px;
+	margin-right: 48px;
+	text-align: right;
+	font-size: 18px;
+	animation: pulse_port 1s infinite;
+	animation-duration: 1.7s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
 
 }
 
 .link_til_portfolio a:hover {
-    color: #7D7096;
+	color: #7D7096;
 }
 
 @keyframes pulse_port {
-    0% {
-        transform: scale(0.95);
-    }
+	0% {
+		transform: scale(0.95);
+	}
 
-    100% {
-        transform: scale(1.0);
-    }
+	100% {
+		transform: scale(1.0);
+	}
 }
 
 
 
 .luk_knap {
-    width: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 30px;
-    align-self: center
+	width: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 30px;
+	align-self: center
 }
 
 .luk_knap:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 
@@ -290,48 +290,48 @@ iframe {
 /*     anmeldelser    */
 
 .skull {
-    width: 30px;
-    margin: 5px;
+	width: 30px;
+	margin: 5px;
 }
 
 #anmeldelser {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 60px;
 }
 
 .anmeldelse {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    padding-bottom: 30px;
-    background-color: rgba(255, 255, 255, 0.37);
-    margin-bottom: 30px;
-    margin: 20px;
-    padding: 10px;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	padding-bottom: 30px;
+	background-color: rgba(255, 255, 255, 0.37);
+	margin-bottom: 30px;
+	margin: 20px;
+	padding: 10px;
 }
 
 .anmeldelser_h2 {
-    text-align: center;
-    color: #7D7096;
-    font-size: 35px;
+	text-align: center;
+	color: #7D7096;
+	font-size: 35px;
 }
 
 #anmeldelser p {
-    margin: 20px;
+	margin: 20px;
 }
 
 .anmeldelse1_person p {
-    font-size: 13px;
-    font-style: italic;
-    color: #7D7096;
+	font-size: 13px;
+	font-style: italic;
+	color: #7D7096;
 
 }
 
 .anmeldelse_billeder {
-    width: 100%;
+	width: 100%;
 
 }
 
@@ -340,161 +340,161 @@ iframe {
 /*     kontakt    */
 
 .kontakt_tekst {
-    background-color: rgba(255, 255, 255, 0.37);
-    height: 250px;
+	background-color: rgba(255, 255, 255, 0.37);
+	height: 250px;
 }
 
 .kontakt_tekst h2 {
-    color: #7D7096;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 60px;
+	color: #7D7096;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 60px;
 }
 
 .kontakt_tekst p {
-    padding-left: 30px;
-    padding-right: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],
 select,
 textarea {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    background-color: rgba(255, 255, 255, 0.71);
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	background-color: rgba(255, 255, 255, 0.71);
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #7D7096;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+	background-color: #7D7096;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+	background-color: #45a049;
 }
 
 /* Add a background color and some padding around the form */
 .container_kontakt {
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.37);
-    padding: 20px;
-    font-family: 'Raleway', sans-serif;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.37);
+	padding: 20px;
+	font-family: 'Raleway', sans-serif;
 }
 
 .googlemaps {
-    filter: grayscale(100%);
-    height: 300px;
-    margin-bottom: 0;
+	filter: grayscale(100%);
+	height: 300px;
+	margin-bottom: 0;
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #7d7096;
-    height: 160px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #7d7096;
+	height: 160px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 30px;
 }
 
 .social {
-    width: 30px;
-    margin-right: 50px;
+	width: 30px;
+	margin-right: 50px;
 }
 
 .some {
-    padding-bottom: 5px;
+	padding-bottom: 5px;
 }
 
 .logo {
-    width: 110px;
-    text-align: center;
-    color: white;
+	width: 110px;
+	text-align: center;
+	color: white;
 }
 
 .logo h2 {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .info {
-    width: 200px;
-    text-align: right;
-    font-size: 0.8rem;
-    margin-top: 20px;
+	width: 200px;
+	text-align: right;
+	font-size: 0.8rem;
+	margin-top: 20px;
 }
 
 .info p {
-    padding: 0;
-    margin: 4px;
+	padding: 0;
+	margin: 4px;
 }
 
 /*Portfolio site*/
 
 .go_back {
-    padding: 10px;
-    color: white;
+	padding: 10px;
+	color: white;
 
 }
 
 .go_back img {
-    width: 35px;
-    animation: pulse 2s infinite;
-    animation-duration: 1.7s;
-    animation-timing-function: ease-in;
-    animation-direction: alternate;
+	width: 35px;
+	animation: pulse 2s infinite;
+	animation-duration: 1.7s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
 }
 
 @keyframes pulse {
-    0% {
-        transform: scale(0.95);
+	0% {
+		transform: scale(0.95);
 
 
-    }
+	}
 
 
-    100% {
-        transform: scale(1.2);
+	100% {
+		transform: scale(1.2);
 
-    }
+	}
 }
 
 
 
 
 .portfolio_overskrift {
-    text-align: center;
-    color: white;
-    padding-left: 40px;
+	text-align: center;
+	color: white;
+	padding-left: 40px;
 }
 
 
 
 #portfolio_1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 
 }
 
 #portfolio_1 img {
-    width: 240px;
-    padding-bottom: 5px;
+	width: 240px;
+	padding-bottom: 5px;
 }
 
 
@@ -502,103 +502,93 @@ footer {
 
 @media only screen and (min-width: 690px) {
 
-    .hidden {
-        display: none;
-        transform: scale(0);
-        transform: translateY(100%);
-        opacity: 0;
-        text-decoration: none;
-    }
+	.hidden {
+		display: none;
+		transform: scale(0);
+		transform: translateY(100%);
+		opacity: 0;
+		text-decoration: none;
+	}
 
-    nav {
-        z-index: 2;
-        width: 100vw;
-        font-size: 16px;
-    }
+	nav {
+		z-index: 2;
+		width: 100vw;
+		font-size: 16px;
+	}
 
-    #menuknap {
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        text-align: left;
-        padding-right: 10px;
-        font-size: 2rem;
-        cursor: pointer;
-        color: white;
-    }
+	#menuknap {
+		display: none;
+	}
 
-    #menu {
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        justify-content: center;
-        /*
-	transition: transform .3s;
-	transform-origin: left bottom;
-*/
-        top: 0;
-        height: 290px;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-        background-color: white;
+	#menu {
+		display: flex;
+		position: fixed;
+		flex-direction: row;
+		list-style-type: none;
+		justify-content: space-around;
+		top: 0;
+		width: 100%;
+		height: 50px;
+		margin: 0;
+		padding-left: 30px;
+		padding-right: 20px;
+		padding-top: 10px;
+	}
 
-    }
+	li {
+		font-family: 'Abril Fatface', cursive;
+		font-size: 20px;
+		color: #7D7096;
 
-    li {
-        font-family: 'Abril Fatface', cursive;
-        font-size: 20px;
-        color: #7D7096;
+	}
 
-    }
+	li a {
+		font-size: 16px;
+		color: #707070;
+	}
 
-    li a {
-        font-size: 16px;
-        color: #707070;
-    }
+	a {
+		text-decoration-line: none;
+		color: black;
+		font-family: monospace;
+		cursor: pointer;
+	}
 
-    a {
-        text-decoration-line: none;
-        color: black;
-        font-family: monospace;
-        cursor: pointer;
-    }
+	a:hover {
+		color: #F2EBEE;
+	}
 
-    a:hover {
-        color: #F2EBEE;
-    }
+	#collapsible {
+		color: #444;
+		cursor: pointer;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+	}
 
-    #collapsible {
-        color: #444;
-        cursor: pointer;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-    }
+	#collapsible:hover {
+		color: #F2EBEE;
+	}
 
-    #collapsible:hover {
-        color: #F2EBEE;
-    }
-
-    #content_collap {
-        display: flex;
-        flex-direction: column;
-        z-index: 2;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        color: white;
-        background-color: #9289a5;
-        text-align: center;
-        align-content: center;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
+	#content_collap {
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		color: white;
+		background-color: #9289a5;
+		text-align: center;
+		align-content: center;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
 
 
-    /*
+	/*
     #menu {
         display: flex;
         position: fixed;
@@ -628,180 +618,180 @@ footer {
 */
 
 
-    /*     velkommen     */
+	/*     velkommen     */
 
 
-    .velkommen_tekst {
-        padding-left: 100px;
-        padding-right: 100px;
-        line-height: 25px;
-        padding-top: 40px;
-    }
+	.velkommen_tekst {
+		padding-left: 100px;
+		padding-right: 100px;
+		line-height: 25px;
+		padding-top: 40px;
+	}
 
-    .velkommen_tekst h2 {
-        /*        color: #7D7096;*/
-        font-size: 4rem;
-        text-align: center;
-        line-height: 4.5rem;
-    }
+	.velkommen_tekst h2 {
+		/*        color: #7D7096;*/
+		font-size: 4rem;
+		text-align: center;
+		line-height: 4.5rem;
+	}
 
-    .velkommen_tekst p {
-        padding-right: 20px;
-        padding-left: 20px;
-        text-align: justify;
-    }
+	.velkommen_tekst p {
+		padding-right: 20px;
+		padding-left: 20px;
+		text-align: justify;
+	}
 
-    /*    */
+	/*    */
 
-    .mySlides {
-        width: 100vw;
-        filter: brightness(0.5);
-        left: 0;
-        padding-top: 50px;
-    }
+	.mySlides {
+		width: 100vw;
+		filter: brightness(0.5);
+		left: 0;
+		padding-top: 50px;
+	}
 
-    #video_container {
-        margin-left: 50px;
-        margin-right: 50px;
-        padding-bottom: 50px;
-    }
-
-
-    /*    portfolio   */
+	#video_container {
+		margin-left: 50px;
+		margin-right: 50px;
+		padding-bottom: 50px;
+	}
 
 
-    #portfolio {
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 250px;
-    }
-
-    .link_til_portfolio {
-        padding-right: 10px;
-        top: -230px;
-    }
-
-    #portfolio_1 {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    #portfolio_1 img {
-        width: 400px;
-        padding-bottom: 10px;
-    }
-
-    #portfolio img {
-        width: 290px;
-    }
-
-    .portfolio_h2 {
-        padding-top: 90px;
-    }
+	/*    portfolio   */
 
 
-    /*    anmeldelser    */
+	#portfolio {
+		width: 100%;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 250px;
+	}
+
+	.link_til_portfolio {
+		padding-right: 10px;
+		top: -230px;
+	}
+
+	#portfolio_1 {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	#portfolio_1 img {
+		width: 400px;
+		padding-bottom: 10px;
+	}
+
+	#portfolio img {
+		width: 290px;
+	}
+
+	.portfolio_h2 {
+		padding-top: 90px;
+	}
 
 
-    #anmeldelser {
-        /*        width: 100vh;
+	/*    anmeldelser    */
+
+
+	#anmeldelser {
+		/*        width: 100vh;
         */
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding-bottom: 80px;
-        padding-left: 150px;
-        padding-right: 150px;
-    }
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding-bottom: 80px;
+		padding-left: 150px;
+		padding-right: 150px;
+	}
 
-    .anmeldelse {
-        text-align: center;
-        align-items: center;
-        width: 700px;
-        height: 400px;
-        background-color: rgba(255, 255, 255, 0.37);
-        margin-bottom: 30px;
-        padding-bottom: 20px;
-    }
+	.anmeldelse {
+		text-align: center;
+		align-items: center;
+		width: 700px;
+		height: 400px;
+		background-color: rgba(255, 255, 255, 0.37);
+		margin-bottom: 30px;
+		padding-bottom: 20px;
+	}
 
-    .anmeldelse_txt {
-        height: 55%;
-    }
+	.anmeldelse_txt {
+		height: 55%;
+	}
 
-    .anmeldelse p {
-        font-size: 15px;
-        height: 100px;
-        line-height: 1.5;
-    }
+	.anmeldelse p {
+		font-size: 15px;
+		height: 100px;
+		line-height: 1.5;
+	}
 
-    .skull {
-        padding-top: 30px;
-    }
-
-
-    /*     kontakt   */
+	.skull {
+		padding-top: 30px;
+	}
 
 
-    .kontakt_tekst {
-        padding-right: 40px;
-        padding-left: 40px;
-        padding-top: 50px;
-    }
-
-    .container_kontakt {
-        padding-right: 60px;
-        padding-left: 60px;
-        padding-bottom: 50px;
-        padding-top: 40px;
-    }
-
-    .googlemaps {
-        margin: 0;
-        padding: 0;
-    }
+	/*     kontakt   */
 
 
-    /*     footer    */
+	.kontakt_tekst {
+		padding-right: 40px;
+		padding-left: 40px;
+		padding-top: 50px;
+	}
+
+	.container_kontakt {
+		padding-right: 60px;
+		padding-left: 60px;
+		padding-bottom: 50px;
+		padding-top: 40px;
+	}
+
+	.googlemaps {
+		margin: 0;
+		padding: 0;
+	}
 
 
-    .social {
-        display: flex;
-    }
+	/*     footer    */
 
-    .some {
-        width: 40px;
-        height: 40px;
-        margin-right: 20px;
-        margin-top: 59px;
-    }
 
-    .logo h1 {
-        margin-top: 40px;
-        padding-left: 100px;
-        text-align: center;
-    }
+	.social {
+		display: flex;
+	}
 
-    footer {
-        color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: #7d7096;
-        height: 150px;
-        padding-left: 80px;
-        padding-right: 80px;
-        padding-top: 30px;
-        padding: 0;
-    }
+	.some {
+		width: 40px;
+		height: 40px;
+		margin-right: 20px;
+		margin-top: 59px;
+	}
 
-    .info {
-        width: 300px;
-        text-align: right;
-        font-size: 1rem;
-        margin-top: 40px;
-    }
+	.logo h1 {
+		margin-top: 40px;
+		padding-left: 100px;
+		text-align: center;
+	}
+
+	footer {
+		color: white;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		background-color: #7d7096;
+		height: 150px;
+		padding-left: 80px;
+		padding-right: 80px;
+		padding-top: 30px;
+		padding: 0;
+	}
+
+	.info {
+		width: 300px;
+		text-align: right;
+		font-size: 1rem;
+		margin-top: 40px;
+	}
 
 
 }
@@ -812,211 +802,212 @@ footer {
 
 @media only screen and (min-width: 1200px) {
 
-    #menu {
-        display: flex;
-        position: fixed;
-        flex-direction: row;
-        list-style-type: none;
-        justify-content: space-around;
-        top: 0;
-        width: 100%;
-        height: 50px;
-        margin: 0;
-        padding-left: 30px;
-        padding-right: 20px;
-        padding-top: 10px;
-    }
+	#menu {
+		display: flex;
+		position: fixed;
+		flex-direction: row;
+		list-style-type: none;
+		justify-content: space-around;
+		top: 0;
+		width: 100%;
+		height: 50px;
+		margin: 0;
+		padding-left: 30px;
+		padding-right: 20px;
+		padding-top: 10px;
+	}
 
-    .menu_knap1 {
-        padding-left: 780px
-    }
+	.menu_knap1 {
+		padding-left: 780px
+	}
 
-    .menu_knap2 {
-        padding-left: 80px
-    }
+	.menu_knap2 {
+		padding-left: 80px
+	}
 
-    .menu_knap3 {
-        padding-left: 80px
-    }
+	.menu_knap3 {
+		padding-left: 80px
+	}
 
-    .header_overskrift {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        top: 150px;
-        text-align: center;
-        color: white;
-        font-size: 40px;
-    }
-
-
-    /*    */
-
-    .mySlides {
-        height: 450px;
-    }
-
-    /*  velkommen  */
+	.header_overskrift {
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		top: 150px;
+		text-align: center;
+		color: white;
+		font-size: 40px;
+	}
 
 
-    .velkommen_tekst {
-        padding-left: 250px;
-        padding-right: 250px;
-        line-height: 25px;
-        padding-top: 40px;
-    }
+	/*    */
 
-    .velkommen_tekst h2 {
-        /*        color: #7D7096;*/
-        font-size: 4 text-align: center;
-    }
+	.mySlides {
+		height: 450px;
+	}
 
-    .velkommen_tekst p {
-        padding-right: 20px;
-        padding-left: 20px;
-        text-align: justify;
-    }
+	/*  velkommen  */
 
 
-    /*     portfolio  */
+	.velkommen_tekst {
+		padding-left: 250px;
+		padding-right: 250px;
+		line-height: 25px;
+		padding-top: 40px;
+	}
 
-    #portfolio {
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 250px;
-    }
+	.velkommen_tekst h2 {
+		/*        color: #7D7096;*/
+		font-size: 30px;
+		text-align: center;
+	}
 
-    .link_til_portfolio {
-        padding-right: 160px;
-        top: -230px;
-    }
-
-    #portfolio_1 {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    #portfolio_1 img {
-        width: 400px;
-        padding-bottom: 10px;
-    }
-
-    #portfolio img {
-        width: 340px;
-    }
-
-    .portfolio_h2 {
-        padding-top: 90px;
-    }
+	.velkommen_tekst p {
+		padding-right: 20px;
+		padding-left: 20px;
+		text-align: justify;
+	}
 
 
+	/*     portfolio  */
 
-    /*    anmeldelser  */
+	#portfolio {
+		width: 100%;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 250px;
+	}
 
+	.link_til_portfolio {
+		padding-right: 160px;
+		top: -230px;
+	}
 
-    #anmeldelser {
-        width: ;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding-bottom: 50px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+	#portfolio_1 {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
 
-    .anmeldelse {
-        text-align: center;
-        align-items: center;
-        width: 400px;
-        height: 400px;
-        background-color: rgba(255, 255, 255, 0.37);
-        margin-bottom: 30px;
-        padding-bottom: 20px;
-    }
+	#portfolio_1 img {
+		width: 400px;
+		padding-bottom: 10px;
+	}
 
-    .anmeldelse_txt {
-        height: 55%;
-    }
+	#portfolio img {
+		width: 340px;
+	}
 
-    .anmeldelse p {
-        font-size: 15px;
-        height: 100px;
-        line-height: 1.5;
-    }
-
-    .skull {
-        padding-top: 30px;
-    }
-
-
-    /*    kontakt    */
-
-
-    .kontakt_tekst {
-        padding-right: 300px;
-        padding-left: 300px;
-        padding-top: 50px;
-    }
-
-    .kontakt_tekst p {
-        line-height: 1.4;
-        padding-left: 70px;
-        padding-right: 70px;
-    }
-
-    .container_kontakt {
-        padding-right: 350px;
-        padding-left: 350px;
-        padding-bottom: 50px;
-        padding-top: 40px;
-    }
-
-    .googlemaps {
-        margin: 0;
-        padding: 0;
-    }
+	.portfolio_h2 {
+		padding-top: 90px;
+	}
 
 
 
-    /*     footer     */
+	/*    anmeldelser  */
 
 
-    .social {
-        display: flex;
-    }
+	#anmeldelser {
+		width: ;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding-bottom: 50px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 
-    .some {
-        width: 50px;
-        height: 50px;
-        margin-right: 20px;
-        margin-top: 50px;
-    }
+	.anmeldelse {
+		text-align: center;
+		align-items: center;
+		width: 400px;
+		height: 400px;
+		background-color: rgba(255, 255, 255, 0.37);
+		margin-bottom: 30px;
+		padding-bottom: 20px;
+	}
 
-    .logo h1 {
-        margin-top: 40px;
-        padding-left: 90px;
-    }
+	.anmeldelse_txt {
+		height: 55%;
+	}
 
-    footer {
-        color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: #7d7096;
-        height: 150px;
-        padding-left: 80px;
-        padding-right: 80px;
-        padding-top: 30px;
-        padding: 0;
-    }
+	.anmeldelse p {
+		font-size: 15px;
+		height: 100px;
+		line-height: 1.5;
+	}
 
-    .info {
-        width: 300px;
-        text-align: right;
-        font-size: 1rem;
-        margin-top: 45px;
-    }
+	.skull {
+		padding-top: 30px;
+	}
+
+
+	/*    kontakt    */
+
+
+	.kontakt_tekst {
+		padding-right: 300px;
+		padding-left: 300px;
+		padding-top: 50px;
+	}
+
+	.kontakt_tekst p {
+		line-height: 1.4;
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+
+	.container_kontakt {
+		padding-right: 350px;
+		padding-left: 350px;
+		padding-bottom: 50px;
+		padding-top: 40px;
+	}
+
+	.googlemaps {
+		margin: 0;
+		padding: 0;
+	}
+
+
+
+	/*     footer     */
+
+
+	.social {
+		display: flex;
+	}
+
+	.some {
+		width: 50px;
+		height: 50px;
+		margin-right: 20px;
+		margin-top: 50px;
+	}
+
+	.logo h1 {
+		margin-top: 40px;
+		padding-left: 90px;
+	}
+
+	footer {
+		color: white;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		background-color: #7d7096;
+		height: 150px;
+		padding-left: 80px;
+		padding-right: 80px;
+		padding-top: 30px;
+		padding: 0;
+	}
+
+	.info {
+		width: 300px;
+		text-align: right;
+		font-size: 1rem;
+		margin-top: 45px;
+	}
 
 }

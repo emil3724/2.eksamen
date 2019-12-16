@@ -4,7 +4,9 @@ function sidenVises() {
 	console.log("sidenVises");
 	document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 	document.querySelector("#collapsible").addEventListener("click", visPriser);
-
+	if (window.innerWidth <= 679) {
+		document.querySelector("#menu").classList.add("hidden");
+	}
 
 }
 
