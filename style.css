@@ -26,7 +26,7 @@ img {
 }
 
 h2 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Rye', cursive;
 }
 
 h3 {
@@ -34,7 +34,8 @@ h3 {
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
+    /*    font-family: 'Raleway', sans-serif;*/
+    font-family: 'Dosis', sans-serif;
 }
 
 .sticky {
@@ -183,8 +184,8 @@ a:hover {
 }
 
 .velkommen_tekst h2 {
-    color: #7D7096;
-    font-size: 35px;
+    /*    color: #7D7096;*/
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -194,7 +195,7 @@ a:hover {
 
 .velkommen_tekst p {
     color: #7D7096;
-    font-size: 16px;
+    font-size: 1.2rem;
 }
 
 iframe {
@@ -634,13 +635,14 @@ footer {
         padding-left: 100px;
         padding-right: 100px;
         line-height: 25px;
-        padding-top: 70px;
+        padding-top: 40px;
     }
 
     .velkommen_tekst h2 {
-        color: #7D7096;
-        font-size: 35px;
+        /*        color: #7D7096;*/
+        font-size: 4rem;
         text-align: center;
+        line-height: 4.5rem;
     }
 
     .velkommen_tekst p {
@@ -848,6 +850,12 @@ footer {
     }
 
 
+    /*    */
+
+    .mySlides {
+        height: 450px;
+    }
+
     /*  velkommen  */
 
 
@@ -855,13 +863,12 @@ footer {
         padding-left: 250px;
         padding-right: 250px;
         line-height: 25px;
-        padding-top: 70px;
+        padding-top: 40px;
     }
 
     .velkommen_tekst h2 {
-        color: #7D7096;
-        font-size: 35px;
-        text-align: center;
+        /*        color: #7D7096;*/
+        font-size: 4 text-align: center;
     }
 
     .velkommen_tekst p {
