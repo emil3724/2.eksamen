@@ -129,7 +129,8 @@ a:hover {
 	border: none;
 	text-align: left;
 	outline: none;
-	font-size: 15px;
+	font-size: 16px;
+	color: #707070;
 }
 
 #collapsible:hover {
@@ -435,7 +436,10 @@ footer {
 
 .social {
 	width: 100%;
-	margin-right: 50px;
+}
+
+.social img {
+	width: 40px;
 }
 
 
@@ -534,11 +538,7 @@ footer {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	padding-top: 20px;
-}
-
-.social img {
-	width: 80%;
+	padding-top: 40px;
 }
 
 .social a:hover {
@@ -866,16 +866,15 @@ footer {
 	}
 
 	.social img {
-		width: 50%;
+		width: 40px;
 	}
-
 
 
 	.logo {
 		padding-left: 50px;
 		width: 100%;
 		text-align: center;
-		padding-top: 20px;
+		padding-top: 10px;
 		font-size: 1.5rem;
 	}
 
@@ -884,8 +883,11 @@ footer {
 	.info {
 		width: 100%;
 		text-align: right;
-		font-size: 1.5rem;
 		padding-top: 20px;
+	}
+
+	.info p {
+		font-size: 1.2rem;
 	}
 
 
@@ -910,14 +912,20 @@ footer {
 	}
 
 	#logo_nav {
-		padding-left: 20px;
+		position: absolute;
 	}
 
-	.menu_knap1 {}
+	.menu_knap1 {
+		padding-left: 690px;
+	}
 
-	.menu_knap2 {}
+	.menu_knap2 {
+		padding-left: 100px;
+	}
 
-	.menu_knap3 {}
+	.menu_knap3 {
+		padding-left: 100px;
+	}
 
 	#splash {
 		width: 100%;
@@ -1100,7 +1108,7 @@ footer {
 		color: white;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: space-between;
 		background-color: #7d7096;
 		height: 150px;
 		padding-top: 30px;
@@ -1111,7 +1119,7 @@ footer {
 	.social {
 		width: 100%;
 		display: flex;
-		padding-left: 50px;
+		padding-left: 0px;
 	}
 
 
@@ -1119,6 +1127,7 @@ footer {
 		display: flex;
 		width: 100%;
 		text-align: center;
+		padding-left: 150px;
 	}
 
 
