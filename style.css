@@ -51,11 +51,21 @@ p {
 	text-decoration: none;
 }
 
+.hidden_1 {
+	visibility: hidden;
+}
+
 nav {
 	z-index: 1;
 	width: 100vw;
 	font-size: 16px;
 	top: 0;
+}
+
+#logo_nav {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 1.25rem;
+	color: #7D7096;
 }
 
 #menuknap {
@@ -74,10 +84,9 @@ nav {
 	flex-direction: column;
 	list-style-type: none;
 	justify-content: center;
-	/*
+
 	transition: transform .3s;
 	transform-origin: left bottom;
-*/
 	top: 0;
 	height: 200px;
 	width: 100%;
@@ -85,6 +94,10 @@ nav {
 	text-align: center;
 	background-color: white;
 
+}
+
+ul {
+	padding: 0;
 }
 
 li {
@@ -144,7 +157,6 @@ a:hover {
 /*   slideshow   */
 
 #splash {
-	width: 100%;
 	background-image: url(Billeder/omg_baggrund-kopi.png);
 	background-position: center;
 	height: 250px;
@@ -531,11 +543,25 @@ footer {
 	width: 80%;
 }
 
+.social a:hover {
+	opacity: 50%;
+}
+
 
 .logo {
 	display: flex;
 	width: 100%;
 	text-align: center;
+}
+
+.logo a {
+	font-family: 'Abril Fatface', cursive;
+	color: white;
+}
+
+.logo a:hover {
+	opacity: 50%;
+	color: white;
 }
 
 
@@ -584,8 +610,6 @@ footer {
 		width: 100%;
 		height: 50px;
 		margin: 0;
-		padding-left: 30px;
-		padding-right: 20px;
 		padding-top: 10px;
 	}
 
@@ -642,34 +666,6 @@ footer {
 	}
 
 
-	/*
-    #menu {
-        display: flex;
-        position: fixed;
-        flex-direction: row;
-        list-style-type: none;
-        justify-content: ;
-        top: 0;
-        width: 100%;
-        height: 50px;
-        margin: 0;
-        padding-left: 30px;
-        padding-right: 20px;
-        padding-top: 10px;
-    }
-
-    .menu_knap1 {
-        padding-left: 780px
-    }
-
-    .menu_knap2 {
-        padding-left: 80px
-    }
-
-    .menu_knap3 {
-        padding-left: 80px
-    }
-*/
 
 
 	/*     velkommen     */
@@ -768,6 +764,10 @@ footer {
 	#portfolio_1 {
 		padding-left: 100px;
 		padding-right: 100px;
+	}
+
+	.portfolio_overskrift {
+		color: #7d7096;
 	}
 
 	#portfolio_1 img {
@@ -909,22 +909,16 @@ footer {
 		width: 100%;
 		height: 50px;
 		margin: 0;
-		padding-left: 30px;
+		padding-left: px;
 		padding-right: 20px;
 		padding-top: 10px;
 	}
 
-	.menu_knap1 {
-		padding-left: 780px
-	}
+	.menu_knap1 {}
 
-	.menu_knap2 {
-		padding-left: 80px
-	}
+	.menu_knap2 {}
 
-	.menu_knap3 {
-		padding-left: 80px
-	}
+	.menu_knap3 {}
 
 	#splash {
 		width: 100%;
@@ -1012,9 +1006,14 @@ footer {
 		padding-right: 100px;
 	}
 
+	.portfolio_overskrift {
+		font-size: 4rem;
+		color: #7d7096;
+	}
+
 	#portfolio_1 img {
 		width: 400px;
-		padding-bottom: 10px;
+		padding: 10px;
 	}
 
 	#portfolio img {
