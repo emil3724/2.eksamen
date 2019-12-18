@@ -40,6 +40,18 @@ p {
 	/*    font-family: 'Raleway', sans-serif;*/
 	font-family: 'Dosis', sans-serif;
 	font-size: 1rem;
+	font-family: 'Abril Fatface', cursive;
+
+}
+
+h2 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 2.5rem;
+}
+
+p {
+	/*    font-family: 'Raleway', sans-serif;*/
+	font-family: 'Dosis', sans-serif;
 }
 
 .sticky {
@@ -91,6 +103,43 @@ nav {
 	margin: 0;
 	text-align: center;
 	background-color: white;
+	z-index: 1;
+	width: 100vw;
+	font-size: 16px;
+	top: 0;
+}
+
+#logo_nav {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 1.25rem;
+	color: #7D7096;
+}
+
+#menuknap {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	padding-right: 10px;
+	font-size: 2rem;
+	cursor: pointer;
+	color: white;
+}
+
+#menu {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	justify-content: center;
+
+	transition: transform .3s;
+	transform-origin: left bottom;
+	top: 0;
+	height: 170px;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	background-color: white;
 
 }
 
@@ -103,10 +152,16 @@ li {
 	color: #7D7096;
 	padding: 0;
 	padding-bottom: 10px;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 1rem;
+	line-height: 30px;
+	color: #7D7096;
+	padding: 0;
 
 }
 
 li a {
+
 	font-size: 1.5rem;
 	color: #707070;
 }
@@ -117,6 +172,15 @@ a {
 	font-family: monospace;
 	cursor: pointer;
 	color: #707070;
+	font-size: 16px;
+	color: #707070;
+}
+
+a {
+	text-decoration-line: none;
+	color: black;
+	font-family: monospace;
+	cursor: pointer;
 }
 
 a:hover {
@@ -133,6 +197,15 @@ a:hover {
 	border: none;
 	text-align: left;
 	outline: none;
+	color: #707070;
+	z-index: 2;
+	color: #444;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 16px;
 	color: #707070;
 }
 
@@ -192,6 +265,13 @@ a:hover {
 	text-align: center;
 	top: 145px;
 	color: #7D7096;
+	display: inline;
+	position: absolute;
+	width: 100vw;
+	text-align: center;
+	font-size: 30px;
+	top: 145px;
+	color: #7D7096;
 
 }
 
@@ -223,12 +303,26 @@ a:hover {
 
 }
 
+.velkommen_tekst h2 {
+	/*    color: #7D7096;*/
+	text-align: center;
+}
+
 .undertekst {
 	text-align: center;
 }
 
 .velkommen_tekst p {
+
 	color: #7D7096;
+
+	color: #7D7096;
+	font-size: 1.0rem;
+}
+
+iframe {
+	width: 100%;
+	height: 500px;
 }
 
 /*  video  */
@@ -266,6 +360,24 @@ iframe {
 	background-position: bottom;
 	padding-bottom: 200px;
 	padding-top: 20px;
+	color: #7D7096;
+	text-align: center;
+	background-color: #F2EBEE;
+	margin: 0;
+	margin-top: 50px;
+	padding-top: 20px;
+}
+
+#portfolio {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	background-image: url(Billeder/omg_baggrund-kopi.png);
+	background-position: bottom;
+	padding-bottom: 200px;
+	padding-top: 50px;
 
 }
 
@@ -306,6 +418,18 @@ iframe {
 	}
 }
 
+.luk_knap {
+	width: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 30px;
+	align-self: center
+}
+
+.luk_knap:hover {
+	cursor: pointer;
+}
+
 
 
 
@@ -337,6 +461,8 @@ iframe {
 .anmeldelser_h2 {
 	text-align: center;
 	color: #7D7096;
+	text-align: center;
+	color: #7D7096;
 }
 
 #anmeldelser p {
@@ -346,6 +472,10 @@ iframe {
 .anmeldelse1_person p {
 	font-style: italic;
 	color: #7D7096;
+	font-size: 13px;
+	font-style: italic;
+	color: #7D7096;
+
 
 }
 
@@ -364,6 +494,7 @@ iframe {
 }
 
 .kontakt_tekst h2 {
+
 	color: #7D7096;
 	text-align: center;
 	padding-top: 40px;
@@ -374,6 +505,15 @@ iframe {
 	padding-left: 30px;
 	padding-right: 30px;
 	line-height: 1.5rem;
+
+	color: #7D7096;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.kontakt_tekst p {
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -418,6 +558,38 @@ input[type=submit]:hover {
 	filter: grayscale(100%);
 	height: 300px;
 	margin-bottom: 0;
+}
+
+.social {
+	width: 100%;
+}
+
+.social img {
+	width: 40px;
+}
+
+
+.logo {
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+.logo h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.info {
+	width: 100%;
+	text-align: right;
+	font-size: 0.8rem;
+	margin-top: 20px;
+}
+
+.info p {
+	padding: 0;
+	margin: 4px;
 }
 
 /*Portfolio site*/
@@ -478,6 +650,7 @@ input[type=submit]:hover {
 /*FOOTER*/
 
 footer {
+
 	width: 100%;
 	color: white;
 	display: flex;
@@ -485,11 +658,21 @@ footer {
 	justify-content: space-around;
 	background-color: #7d7096;
 	height: 150px;
+	width: 100%;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #7d7096;
+	height: 150px;
+	padding-top: 20px;
+
 
 }
 
 
 .social {
+
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -498,6 +681,12 @@ footer {
 
 .social img {
 	width: 30px;
+
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 40px;
+
 }
 
 .social a:hover {
@@ -524,6 +713,7 @@ footer {
 
 
 .info {
+
 	width: 100%;
 	text-align: right;
 	padding-top: 20px;
@@ -531,9 +721,22 @@ footer {
 
 }
 
+
+width: 100%;
+text-align: right;
+
+}
+
+.info p {
+	font-size: 0.9rem;
+}
+
+
+
 /*WEB MEDIUM*/
 
 @media only screen and (min-width: 690px) {
+
 
 	h2 {
 		font-size: 2rem;
@@ -662,6 +865,129 @@ footer {
 		text-align: justify;
 	}
 
+	.hidden {
+		display: none;
+		transform: scale(0);
+		transform: translateY(100%);
+		opacity: 0;
+		text-decoration: none;
+	}
+
+	nav {
+		z-index: 2;
+		width: 100vw;
+		font-size: 16px;
+	}
+
+	#menuknap {
+		display: none;
+	}
+
+	#menu {
+		display: flex;
+		position: fixed;
+		flex-direction: row;
+		list-style-type: none;
+		justify-content: space-around;
+		top: 0;
+		width: 100%;
+		height: 50px;
+		margin: 0;
+		padding-top: 10px;
+	}
+
+	li {
+		font-family: 'Abril Fatface', cursive;
+		font-size: 20px;
+		color: #7D7096;
+
+	}
+
+	li a {
+		font-size: 16px;
+		color: #707070;
+	}
+
+	a {
+		text-decoration-line: none;
+		color: black;
+		font-family: monospace;
+		cursor: pointer;
+	}
+
+	a:hover {
+		color: #F2EBEE;
+	}
+
+	#collapsible {
+		color: #444;
+		cursor: pointer;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+	}
+
+	#collapsible:hover {
+		color: #F2EBEE;
+	}
+
+	#content_collap {
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		color: white;
+		background-color: #9289a5;
+		text-align: center;
+		align-content: center;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+
+
+
+	/*     velkommen     */
+
+
+	#velkommen_boks {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+
+
+	.velkommen_tekst {
+		line-height: 25px;
+		width: 500px;
+		padding: 10px;
+	}
+
+	.velkommen_img {
+		padding: 10px;
+		padding-top: 70px;
+		margin: 0;
+	}
+
+	.velkommen_tekst h2 {
+		/*        color: #7D7096;*/
+		text-align: center;
+		line-height: 4.5rem;
+	}
+
+	.velkommen_tekst p {
+		padding-right: 20px;
+		padding-left: 20px;
+		text-align: justify;
+	}
+
+
 	/*    */
 
 	#splash {
@@ -671,6 +997,7 @@ footer {
 		padding-bottom: 600px;
 
 	}
+
 
 
 	.overskrift {
@@ -773,7 +1100,14 @@ footer {
 		height: 55%;
 	}
 
+
 	.anmeldelse p {
+		height: 100px;
+		line-height: 1.5;
+	}
+
+	.anmeldelse p {
+		font-size: 15px;
 		height: 100px;
 		line-height: 1.5;
 	}
@@ -792,6 +1126,7 @@ footer {
 		padding-top: 50px;
 	}
 
+
 	.kontakt_tekst h2 {
 		color: #7D7096;
 		text-align: center;
@@ -805,6 +1140,14 @@ footer {
 		padding-bottom: 50px;
 		padding-top: 40px;
 	}
+
+	.container_kontakt {
+		padding-right: 60px;
+		padding-left: 60px;
+		padding-bottom: 50px;
+		padding-top: 40px;
+	}
+
 
 	.googlemaps {
 		margin: 0;
@@ -854,6 +1197,12 @@ footer {
 		padding-top: 20px;
 	}
 
+	.info p {
+		font-size: 1.2rem;
+	}
+
+
+
 }
 
 
@@ -897,6 +1246,7 @@ footer {
 		padding-bottom: 800px;
 
 	}
+
 
 
 	.overskrift {
@@ -948,6 +1298,7 @@ footer {
 		margin: 0;
 	}
 
+
 	.velkommen_tekst h2 {
 		/*        color: #7D7096;*/
 		text-align: center;
@@ -957,6 +1308,17 @@ footer {
 		text-align: justify;
 
 	}
+
+	.velkommen_tekst h2 {
+		/*        color: #7D7096;*/
+		text-align: center;
+	}
+
+	.velkommen_tekst p {
+		text-align: justify;
+		font-size: 1.2rem;
+	}
+
 
 
 	/*     portfolio  */
