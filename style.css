@@ -1,10 +1,10 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	background-color: #CBC0C5;
+    margin: 0;
+    background-color: #CBC0C5;
 
 }
 
@@ -22,215 +22,217 @@ html {
 */
 
 img {
-	width: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+
 }
 
 h2 {
-	font-family: 'Abril Fatface', cursive;
-}
-
-h3 {
-	font-family: 'Abril Fatface', cursive;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.5rem;
 }
 
 p {
-	/*    font-family: 'Raleway', sans-serif;*/
-	font-family: 'Dosis', sans-serif;
+    /*    font-family: 'Raleway', sans-serif;*/
+    font-family: 'Dosis', sans-serif;
 }
 
 .sticky {
-	position: fixed;
+    position: fixed;
 }
 
 
 .hidden {
-	display: none;
-	transform: scale(0);
-	transform: translateY(100%);
-	opacity: 0;
-	text-decoration: none;
+    display: none;
+    transform: scale(0);
+    transform: translateY(100%);
+    opacity: 0;
+    text-decoration: none;
 }
 
 
 nav {
-	z-index: 1;
-	width: 100vw;
-	font-size: 16px;
-	top: 0;
+    z-index: 1;
+    width: 100vw;
+    font-size: 16px;
+    top: 0;
 }
 
 #logo_nav {
-	font-family: 'Abril Fatface', cursive;
-	font-size: 1.25rem;
-	color: #7D7096;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.25rem;
+    color: #7D7096;
 }
 
 #menuknap {
-	display: inline-block;
-	position: absolute;
-	right: 0;
-	text-align: left;
-	padding-right: 10px;
-	font-size: 2rem;
-	cursor: pointer;
-	color: white;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    padding-right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
 }
 
 #menu {
-	display: flex;
-	flex-direction: column;
-	list-style-type: none;
-	justify-content: center;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
 
-	transition: transform .3s;
-	transform-origin: left bottom;
-	top: 0;
-	height: 200px;
-	width: 100%;
-	margin: 0;
-	text-align: center;
-	background-color: white;
+    transition: transform .3s;
+    transform-origin: left bottom;
+    top: 0;
+    height: 170px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: white;
 
 }
 
 ul {
-	padding: 0;
+    padding: 0;
 }
 
 li {
-	font-family: 'Abril Fatface', cursive;
-	font-size: 20px;
-	color: #7D7096;
-	padding: 0;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1rem;
+    line-height: 30px;
+    color: #7D7096;
+    padding: 0;
 
 }
 
 li a {
-	font-size: 16px;
-	color: #707070;
+    font-size: 16px;
+    color: #707070;
 }
 
 a {
-	text-decoration-line: none;
-	color: black;
-	font-family: monospace;
-	cursor: pointer;
+    text-decoration-line: none;
+    color: black;
+    font-family: monospace;
+    cursor: pointer;
 }
 
 a:hover {
-	color: #F2EBEE;
+    color: #F2EBEE;
 }
 
 #collapsible {
-	z-index: 2;
-	color: #444;
-	cursor: pointer;
-	width: 100%;
-	border: none;
-	text-align: left;
-	outline: none;
-	font-size: 16px;
-	color: #707070;
+    z-index: 2;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    color: #707070;
 }
 
 #collapsible:hover {
-	color: #F2EBEE;
+    color: #F2EBEE;
 }
 
 #content_collap {
-	display: flex;
-	flex-direction: column;
-	z-index: 2;
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	color: white;
-	background-color: #9289a5;
-	text-align: center;
-	align-content: center;
-	padding-right: 20px;
-	padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: #9289a5;
+    text-align: center;
+    align-content: center;
+    padding-right: 20px;
+    padding-left: 20px;
 
 }
 
 /*   slideshow   */
 
 #splash {
-	background-image: url(Billeder/omg_baggrund-kopi.png);
-	background-position: center;
-	height: 250px;
+    background-image: url(Billeder/omg_baggrund-kopi.png);
+    background-position: center;
+    height: 250px;
 
 }
 }
 
 .mySlides {
-	filter: brightness(0.5);
+    filter: brightness(0.5);
 }
 
 .overskrift {
-	display: inline;
-	position: absolute;
-	width: 100vw;
-	text-align: center;
-	font-size: 30px;
-	top: 145px;
-	color: #7D7096;
+    display: inline;
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    font-size: 30px;
+    top: 145px;
+    color: #7D7096;
 
 }
 
 .slideshow {
-	width: 100%;
-	top: 0;
+    width: 100%;
+    top: 0;
 }
 
 
 /*   velkommen   */
 
 #velkommen_boks {
-	width: 100vw;
-	display: flex;
-	flex-direction: column-reverse;
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
 
 }
 
 .velkommen_img {
-	padding: 20px;
-	margin-bottom: 50px;
+    padding: 20px;
+    margin-bottom: 50px;
 }
 
 .velkommen_tekst {
-	align-self: center;
-	padding-left: 20px;
-	padding-right: 20px;
+    align-self: center;
+    padding-left: 20px;
+    padding-right: 20px;
 
 
 }
 
 .velkommen_tekst h2 {
-	/*    color: #7D7096;*/
-	font-size: 2.5rem;
-	text-align: center;
+    /*    color: #7D7096;*/
+    text-align: center;
 }
 
 .undertekst {
-	text-align: center;
+    text-align: center;
 }
 
 .velkommen_tekst p {
-	color: #7D7096;
-	font-size: 1.0rem;
+    color: #7D7096;
+    font-size: 1.0rem;
 }
 
 iframe {
-	width: 100%;
-	height: 500px;
+    width: 100%;
+    height: 500px;
 }
 
 /*  video  */
 
 .video {
-	background-color: white;
-	height: 400px;
+    background-color: white;
+    height: 400px;
 }
 
 /*      */
@@ -238,73 +240,72 @@ iframe {
 /*Portfolio*/
 
 .portfolio_h2 {
-	color: #7D7096;
-	text-align: center;
-	background-color: #F2EBEE;
-	margin: 0;
-	margin-top: 50px;
-	padding-top: 20px;
-	font-size: 35px;
+    color: #7D7096;
+    text-align: center;
+    background-color: #F2EBEE;
+    margin: 0;
+    margin-top: 50px;
+    padding-top: 20px;
 }
 
 #portfolio {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	width: 100%;
-	background-image: url(Billeder/omg_baggrund-kopi.png);
-	background-position: bottom;
-	padding-bottom: 200px;
-	padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url(Billeder/omg_baggrund-kopi.png);
+    background-position: bottom;
+    padding-bottom: 200px;
+    padding-top: 50px;
 
 }
 
 #portfolio img {
-	width: 200px;
-	margin-right: 5px;
+    width: 200px;
+    margin-right: 5px;
 }
 
 
 .link_til_portfolio {
-	position: relative;
-	top: -200px;
-	margin-right: 48px;
-	text-align: right;
-	font-size: 18px;
-	animation: pulse_port 1s infinite;
-	animation-duration: 1.7s;
-	animation-timing-function: ease-in;
-	animation-direction: alternate;
+    position: relative;
+    top: -200px;
+    margin-right: 48px;
+    text-align: right;
+    font-size: 18px;
+    animation: pulse_port 1s infinite;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
 
 }
 
 .link_til_portfolio a:hover {
-	color: #7D7096;
+    color: #7D7096;
 }
 
 @keyframes pulse_port {
-	0% {
-		transform: scale(0.95);
-	}
+    0% {
+        transform: scale(0.95);
+    }
 
-	100% {
-		transform: scale(1.0);
-	}
+    100% {
+        transform: scale(1.0);
+    }
 }
 
 
 
 .luk_knap {
-	width: 50px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	font-size: 30px;
-	align-self: center
+    width: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    align-self: center
 }
 
 .luk_knap:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 
@@ -313,47 +314,46 @@ iframe {
 /*     anmeldelser    */
 
 .skull {
-	width: 30px;
-	margin: 5px;
+    width: 30px;
+    margin: 5px;
 }
 
 #anmeldelser {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin-bottom: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
 }
 
 .anmeldelse {
-	width: 100%;
-	text-align: center;
-	align-items: center;
-	padding-bottom: 30px;
-	background-color: rgba(255, 255, 255, 0.37);
-	margin: 20px;
-	padding: 10px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.37);
+    margin: 20px;
+    padding: 10px;
 }
 
 .anmeldelser_h2 {
-	text-align: center;
-	color: #7D7096;
-	font-size: 35px;
+    text-align: center;
+    color: #7D7096;
 }
 
 #anmeldelser p {
-	margin: 20px;
+    margin: 20px;
 }
 
 .anmeldelse1_person p {
-	font-size: 13px;
-	font-style: italic;
-	color: #7D7096;
+    font-size: 13px;
+    font-style: italic;
+    color: #7D7096;
 
 }
 
 .anmeldelse_billeder {
-	width: 100%;
+    width: 100%;
 
 }
 
@@ -362,205 +362,204 @@ iframe {
 /*     kontakt    */
 
 .kontakt_tekst {
-	background-color: rgba(255, 255, 255, 0.37);
-	height: 250px;
+    background-color: rgba(255, 255, 255, 0.37);
+    height: 250px;
 }
 
 .kontakt_tekst h2 {
-	color: #7D7096;
-	font-size: 30px;
-	text-align: center;
-	padding-top: 20px;
+    color: #7D7096;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .kontakt_tekst p {
-	padding-left: 30px;
-	padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],
 select,
 textarea {
-	width: 100%;
-	padding: 12px;
-	border: none;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-	background-color: rgba(255, 255, 255, 0.71);
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: rgba(255, 255, 255, 0.71);
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-	background-color: #7D7096;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
+    background-color: #7D7096;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-	background-color: #45a049;
+    background-color: #45a049;
 }
 
 /* Add a background color and some padding around the form */
 .container_kontakt {
-	border-radius: 5px;
-	background-color: rgba(255, 255, 255, 0.37);
-	padding: 20px;
-	font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.37);
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .googlemaps {
-	filter: grayscale(100%);
-	height: 300px;
-	margin-bottom: 0;
+    filter: grayscale(100%);
+    height: 300px;
+    margin-bottom: 0;
 }
 
 .social {
-	width: 100%;
+    width: 100%;
 }
 
 .social img {
-	width: 40px;
+    width: 40px;
 }
 
 
 .logo {
-	width: 100%;
-	text-align: center;
-	color: white;
+    width: 100%;
+    text-align: center;
+    color: white;
 }
 
 .logo h2 {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .info {
-	width: 100%;
-	text-align: right;
-	font-size: 0.8rem;
-	margin-top: 20px;
+    width: 100%;
+    text-align: right;
+    font-size: 0.8rem;
+    margin-top: 20px;
 }
 
 .info p {
-	padding: 0;
-	margin: 4px;
+    padding: 0;
+    margin: 4px;
 }
 
 /*Portfolio site*/
 
 .go_back {
-	padding: 10px;
-	color: white;
+    padding: 10px;
+    color: white;
 
 }
 
 .go_back img {
-	width: 35px;
-	animation: pulse 2s infinite;
-	animation-duration: 1.7s;
-	animation-timing-function: ease-in;
-	animation-direction: alternate;
-	padding-top: 25px;
+    width: 35px;
+    animation: pulse 2s infinite;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    padding-top: 25px;
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(1.0);
+    0% {
+        transform: scale(1.0);
 
 
-	}
+    }
 
 
-	100% {
-		transform: scale(1.2);
+    100% {
+        transform: scale(1.2);
 
-	}
+    }
 }
 
 
 
 
 .portfolio_overskrift {
-	text-align: center;
-	color: white;
-	padding-left: 40px;
+    text-align: center;
+    color: white;
+    padding-left: 40px;
 }
 
 
 
 #portfolio_1 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
 
 #portfolio_1 img {
-	width: 240px;
-	padding-bottom: 5px;
+    width: 240px;
+    padding-bottom: 5px;
 }
 
 footer {
-	width: 100%;
-	color: white;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	background-color: #7d7096;
-	height: 150px;
-	padding-top: 20px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #7d7096;
+    height: 150px;
+    padding-top: 20px;
 
 }
 
 
 .social {
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	padding-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
 }
 
 .social a:hover {
-	opacity: 50%;
+    opacity: 50%;
 }
 
 
 .logo {
-	display: flex;
-	width: 100%;
-	text-align: center;
+    display: flex;
+    width: 100%;
+    text-align: center;
 }
 
 .logo a {
-	font-family: 'Abril Fatface', cursive;
-	color: white;
+    font-family: 'Abril Fatface', cursive;
+    color: white;
 }
 
 .logo a:hover {
-	opacity: 50%;
-	color: white;
+    opacity: 50%;
+    color: white;
 }
 
 
 
 
 .info {
-	width: 100%;
-	text-align: right;
+    width: 100%;
+    text-align: right;
 
 }
 
 .info p {
-	font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 
@@ -568,315 +567,314 @@ footer {
 
 @media only screen and (min-width: 690px) {
 
-	.hidden {
-		display: none;
-		transform: scale(0);
-		transform: translateY(100%);
-		opacity: 0;
-		text-decoration: none;
-	}
+    .hidden {
+        display: none;
+        transform: scale(0);
+        transform: translateY(100%);
+        opacity: 0;
+        text-decoration: none;
+    }
 
-	nav {
-		z-index: 2;
-		width: 100vw;
-		font-size: 16px;
-	}
+    nav {
+        z-index: 2;
+        width: 100vw;
+        font-size: 16px;
+    }
 
-	#menuknap {
-		display: none;
-	}
+    #menuknap {
+        display: none;
+    }
 
-	#menu {
-		display: flex;
-		position: fixed;
-		flex-direction: row;
-		list-style-type: none;
-		justify-content: space-around;
-		top: 0;
-		width: 100%;
-		height: 50px;
-		margin: 0;
-		padding-top: 10px;
-	}
+    #menu {
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-around;
+        top: 0;
+        width: 100%;
+        height: 50px;
+        margin: 0;
+        padding-top: 10px;
+    }
 
-	li {
-		font-family: 'Abril Fatface', cursive;
-		font-size: 20px;
-		color: #7D7096;
+    li {
+        font-family: 'Abril Fatface', cursive;
+        font-size: 20px;
+        color: #7D7096;
 
-	}
+    }
 
-	li a {
-		font-size: 16px;
-		color: #707070;
-	}
+    li a {
+        font-size: 16px;
+        color: #707070;
+    }
 
-	a {
-		text-decoration-line: none;
-		color: black;
-		font-family: monospace;
-		cursor: pointer;
-	}
+    a {
+        text-decoration-line: none;
+        color: black;
+        font-family: monospace;
+        cursor: pointer;
+    }
 
-	a:hover {
-		color: #F2EBEE;
-	}
+    a:hover {
+        color: #F2EBEE;
+    }
 
-	#collapsible {
-		color: #444;
-		cursor: pointer;
-		width: 100%;
-		border: none;
-		text-align: left;
-		outline: none;
-		font-size: 15px;
-	}
+    #collapsible {
+        color: #444;
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
 
-	#collapsible:hover {
-		color: #F2EBEE;
-	}
+    #collapsible:hover {
+        color: #F2EBEE;
+    }
 
-	#content_collap {
-		display: flex;
-		flex-direction: column;
-		z-index: 2;
-		position: fixed;
-		width: 100%;
-		height: 100vh;
-		color: white;
-		background-color: #9289a5;
-		text-align: center;
-		align-content: center;
-		padding-right: 20px;
-		padding-left: 20px;
-	}
-
-
-
-
-	/*     velkommen     */
-
-
-	#velkommen_boks {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		margin-bottom: 50px;
-	}
-
-
-	.velkommen_tekst {
-		line-height: 25px;
-		width: 500px;
-		padding: 10px;
-	}
-
-	.velkommen_img {
-		padding: 10px;
-		padding-top: 70px;
-		margin: 0;
-	}
-
-	.velkommen_tekst h2 {
-		/*        color: #7D7096;*/
-		font-size: 4rem;
-		text-align: center;
-		line-height: 4.5rem;
-	}
-
-	.velkommen_tekst p {
-		padding-right: 20px;
-		padding-left: 20px;
-		text-align: justify;
-	}
-
-	/*    */
-
-	#splash {
-		width: 100%;
-		background-image: url(Billeder/omg_baggrund-kopi.png);
-		background-position: bottom;
-		padding-bottom: 600px;
-
-	}
-
-
-	.overskrift {
-		display: inline;
-		position: absolute;
-		width: 100vw;
-		text-align: center;
-		font-size: 60px;
-		top: 250px;
-		color: #7D7096;
-
-	}
+    #content_collap {
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        color: white;
+        background-color: #9289a5;
+        text-align: center;
+        align-content: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 
 
 
-	.slideshow {
-		display: flex;
-		width: 100vw;
-		padding-bottom: 100px;
 
-	}
+    /*     velkommen     */
 
 
-	.mySlides {}
-
-	#video_container {
-		margin-left: 50px;
-		margin-right: 50px;
-		padding-bottom: 50px;
-	}
-
-
-	/*    portfolio   */
+    #velkommen_boks {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 
 
-	#portfolio {
-		width: 100%;
-		padding-left: 50px;
-		padding-right: 50px;
-		padding-bottom: 250px;
-	}
+    .velkommen_tekst {
+        line-height: 25px;
+        width: 500px;
+        padding: 10px;
+    }
 
-	.link_til_portfolio {
-		padding-right: 10px;
-		top: -230px;
-	}
+    .velkommen_img {
+        padding: 10px;
+        padding-top: 70px;
+        margin: 0;
+    }
 
-	#portfolio_1 {
-		padding-left: 100px;
-		padding-right: 100px;
-	}
+    .velkommen_tekst h2 {
+        /*        color: #7D7096;*/
+        text-align: center;
+        line-height: 4.5rem;
+    }
 
-	.portfolio_overskrift {
-		color: #7d7096;
-	}
+    .velkommen_tekst p {
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: justify;
+    }
 
-	#portfolio_1 img {
-		width: 400px;
-		padding-bottom: 10px;
-	}
+    /*    */
 
-	#portfolio img {
-		width: 290px;
-	}
+    #splash {
+        width: 100%;
+        background-image: url(Billeder/omg_baggrund-kopi.png);
+        background-position: bottom;
+        padding-bottom: 600px;
 
-	.portfolio_h2 {
-		padding-top: 90px;
-	}
-
-
-	/*    anmeldelser    */
+    }
 
 
-	#anmeldelser {
-		/*        width: 100vh;
+    .overskrift {
+        display: inline;
+        position: absolute;
+        width: 100vw;
+        text-align: center;
+        font-size: 60px;
+        top: 250px;
+        color: #7D7096;
+
+    }
+
+
+
+    .slideshow {
+        display: flex;
+        width: 100vw;
+        padding-bottom: 100px;
+
+    }
+
+
+    .mySlides {}
+
+    #video_container {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-bottom: 50px;
+    }
+
+
+    /*    portfolio   */
+
+
+    #portfolio {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 250px;
+    }
+
+    .link_til_portfolio {
+        padding-right: 10px;
+        top: -230px;
+    }
+
+    #portfolio_1 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .portfolio_overskrift {
+        color: #7d7096;
+    }
+
+    #portfolio_1 img {
+        width: 400px;
+        padding-bottom: 10px;
+    }
+
+    #portfolio img {
+        width: 290px;
+    }
+
+    .portfolio_h2 {
+        padding-top: 90px;
+    }
+
+
+    /*    anmeldelser    */
+
+
+    #anmeldelser {
+        /*        width: 100vh;
         */
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		flex-wrap: wrap;
-		padding-bottom: 80px;
-		padding-left: 150px;
-		padding-right: 150px;
-	}
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 80px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
 
-	.anmeldelse {
-		text-align: center;
-		align-items: center;
-		width: 700px;
-		height: 400px;
-		background-color: rgba(255, 255, 255, 0.37);
-		margin-bottom: 30px;
-		padding-bottom: 20px;
-	}
+    .anmeldelse {
+        text-align: center;
+        align-items: center;
+        width: 700px;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.37);
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
 
-	.anmeldelse_txt {
-		height: 55%;
-	}
+    .anmeldelse_txt {
+        height: 55%;
+    }
 
-	.anmeldelse p {
-		font-size: 15px;
-		height: 100px;
-		line-height: 1.5;
-	}
+    .anmeldelse p {
+        font-size: 15px;
+        height: 100px;
+        line-height: 1.5;
+    }
 
-	.skull {
-		padding-top: 30px;
-	}
-
-
-	/*     kontakt   */
+    .skull {
+        padding-top: 30px;
+    }
 
 
-	.kontakt_tekst {
-		padding-right: 40px;
-		padding-left: 40px;
-		padding-top: 50px;
-	}
-
-	.container_kontakt {
-		padding-right: 60px;
-		padding-left: 60px;
-		padding-bottom: 50px;
-		padding-top: 40px;
-	}
-
-	.googlemaps {
-		margin: 0;
-		padding: 0;
-	}
+    /*     kontakt   */
 
 
-	/*     footer    */
+    .kontakt_tekst {
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-top: 50px;
+    }
 
-	footer {
-		color: white;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		background-color: #7d7096;
-		height: 150px;
-		padding-left: 80px;
-		padding-right: 80px;
+    .container_kontakt {
+        padding-right: 60px;
+        padding-left: 60px;
+        padding-bottom: 50px;
+        padding-top: 40px;
+    }
 
-	}
-
-
-	.social {
-		display: flex;
-		width: 100%;
-		padding-top: 50px;
-	}
-
-	.social img {
-		width: 40px;
-	}
+    .googlemaps {
+        margin: 0;
+        padding: 0;
+    }
 
 
-	.logo {
-		padding-left: 50px;
-		width: 100%;
-		text-align: center;
-		padding-top: 10px;
-		font-size: 1.5rem;
-	}
+    /*     footer    */
+
+    footer {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #7d7096;
+        height: 150px;
+        padding-left: 80px;
+        padding-right: 80px;
+
+    }
+
+
+    .social {
+        display: flex;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .social img {
+        width: 40px;
+    }
+
+
+    .logo {
+        padding-left: 50px;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 1.5rem;
+    }
 
 
 
-	.info {
-		width: 100%;
-		text-align: right;
-		padding-top: 20px;
-	}
+    .info {
+        width: 100%;
+        text-align: right;
+        padding-top: 20px;
+    }
 
-	.info p {
-		font-size: 1.2rem;
-	}
+    .info p {
+        font-size: 1.2rem;
+    }
 
 
 }
@@ -887,246 +885,245 @@ footer {
 
 @media only screen and (min-width: 1200px) {
 
-	#menu {
-		display: flex;
-		position: fixed;
-		flex-direction: row;
-		list-style-type: none;
-		top: 0;
-		width: 100;
-		height: 50px;
-		margin: 0;
-		padding-top: 10px;
-	}
+    #menu {
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        list-style-type: none;
+        top: 0;
+        width: 100;
+        height: 50px;
+        margin: 0;
+        padding-top: 10px;
+    }
 
-	#logo_nav {
-		position: absolute;
-	}
+    #logo_nav {
+        position: absolute;
+    }
 
-	.menu_knap1 {
-		padding-left: 690px;
-	}
+    .menu_knap1 {
+        padding-left: 690px;
+    }
 
-	.menu_knap2 {
-		padding-left: 100px;
-	}
+    .menu_knap2 {
+        padding-left: 100px;
+    }
 
-	.menu_knap3 {
-		padding-left: 100px;
-	}
+    .menu_knap3 {
+        padding-left: 100px;
+    }
 
-	#splash {
-		width: 100%;
-		background-image: url(Billeder/omg_baggrund-kopi.png);
-		background-position: bottom;
-		padding-bottom: 800px;
+    #splash {
+        width: 100%;
+        background-image: url(Billeder/omg_baggrund-kopi.png);
+        background-position: bottom;
+        padding-bottom: 800px;
 
-	}
-
-
-	.overskrift {
-		display: inline;
-		position: absolute;
-		width: 100vw;
-		text-align: center;
-		font-size: 60px;
-		top: 440px;
-		color: #7D7096;
-
-	}
+    }
 
 
+    .overskrift {
+        display: inline;
+        position: absolute;
+        width: 100vw;
+        text-align: center;
+        font-size: 60px;
+        top: 440px;
+        color: #7D7096;
 
-	.slideshow {
-		display: flex;
-		width: 100vw;
-		padding-bottom: 100px;
-
-	}
-
-
-	.mySlides {}
-
-
-	/*  velkommen  */
-
-	#velkommen_boks {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		margin-bottom: 50px;
-	}
-
-
-	.velkommen_tekst {
-		width: 540px;
-
-	}
-
-	.velkommen_img {
-		width: 450px;
-		padding: 0;
-		margin: 0;
-	}
-
-	.velkommen_tekst h2 {
-		/*        color: #7D7096;*/
-		font-size: 30px;
-		text-align: center;
-	}
-
-	.velkommen_tekst p {
-		text-align: justify;
-		font-size: 1.2rem;
-	}
-
-
-	/*     portfolio  */
-
-	#portfolio {
-		width: 100%;
-		padding-left: 40px;
-		padding-right: 40px;
-		padding-bottom: 250px;
-	}
-
-	.link_til_portfolio {
-		padding-right: 160px;
-		top: -230px;
-	}
-
-	#portfolio_1 {
-		padding-left: 100px;
-		padding-right: 100px;
-	}
-
-	.portfolio_overskrift {
-		font-size: 4rem;
-		color: #7d7096;
-	}
-
-	#portfolio_1 img {
-		width: 400px;
-		padding: 10px;
-	}
-
-	#portfolio img {
-		width: 340px;
-	}
-
-	.portfolio_h2 {
-		padding-top: 50px;
-	}
+    }
 
 
 
-	/*    anmeldelser  */
+    .slideshow {
+        display: flex;
+        width: 100vw;
+        padding-bottom: 100px;
+
+    }
 
 
-	#anmeldelser {
-		width: ;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		flex-wrap: wrap;
-		padding-bottom: 50px;
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-
-	.anmeldelse {
-		text-align: center;
-		align-items: center;
-		width: 400px;
-		height: 400px;
-		background-color: rgba(255, 255, 255, 0.37);
-		margin-bottom: 30px;
-		padding-bottom: 20px;
-	}
-
-	.anmeldelse_txt {
-		height: 55%;
-	}
-
-	.anmeldelse p {
-		font-size: 1.0rem;
-		height: 100px;
-		line-height: 1.5;
-	}
-
-	.skull {
-		padding-top: 30px;
-	}
+    .mySlides {}
 
 
-	/*    kontakt    */
+    /*  velkommen  */
+
+    #velkommen_boks {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 
 
-	.kontakt_tekst {
-		padding-right: 300px;
-		padding-left: 300px;
-	}
+    .velkommen_tekst {
+        width: 540px;
 
-	.kontakt_tekst p {
-		line-height: 1.4;
-		padding-left: 70px;
-		padding-right: 70px;
-		font-size: 1.2rem;
-	}
+    }
 
-	.container_kontakt {
-		padding-right: 350px;
-		padding-left: 350px;
-		padding-bottom: 20px;
+    .velkommen_img {
+        width: 450px;
+        padding: 0;
+        margin: 0;
+    }
 
-	}
+    .velkommen_tekst h2 {
+        /*        color: #7D7096;*/
+        text-align: center;
+    }
 
-	.googlemaps {
-		margin: 0;
-		padding: 0;
-	}
+    .velkommen_tekst p {
+        text-align: justify;
+        font-size: 1.2rem;
+    }
 
 
+    /*     portfolio  */
 
-	/*     footer     */
+    #portfolio {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 250px;
+    }
 
-	footer {
-		width: 100%;
-		color: white;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		background-color: #7d7096;
-		height: 150px;
-		padding-top: 30px;
-		padding: 0;
-	}
+    .link_til_portfolio {
+        padding-right: 160px;
+        top: -230px;
+    }
 
+    #portfolio_1 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 
-	.social {
-		width: 100%;
-		display: flex;
-		padding-left: 0px;
-	}
+    .portfolio_overskrift {
+        font-size: 4rem;
+        color: #7d7096;
+    }
 
+    #portfolio_1 img {
+        width: 400px;
+        padding: 10px;
+    }
 
-	.logo {
-		display: flex;
-		width: 100%;
-		text-align: center;
-		padding-left: 150px;
-	}
+    #portfolio img {
+        width: 340px;
+    }
+
+    .portfolio_h2 {
+        padding-top: 50px;
+    }
 
 
 
+    /*    anmeldelser  */
 
-	.info {
-		width: 100%;
-		text-align: right;
-		padding-right: 50px;
-		font-size: 1.7rem;
 
-	}
+    #anmeldelser {
+        width: ;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .anmeldelse {
+        text-align: center;
+        align-items: center;
+        width: 400px;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.37);
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+
+    .anmeldelse_txt {
+        height: 55%;
+    }
+
+    .anmeldelse p {
+        font-size: 1.0rem;
+        height: 100px;
+        line-height: 1.5;
+    }
+
+    .skull {
+        padding-top: 30px;
+    }
+
+
+    /*    kontakt    */
+
+
+    .kontakt_tekst {
+        padding-right: 300px;
+        padding-left: 300px;
+    }
+
+    .kontakt_tekst p {
+        line-height: 1.4;
+        padding-left: 70px;
+        padding-right: 70px;
+        font-size: 1.2rem;
+    }
+
+    .container_kontakt {
+        padding-right: 350px;
+        padding-left: 350px;
+        padding-bottom: 20px;
+
+    }
+
+    .googlemaps {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    /*     footer     */
+
+    footer {
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #7d7096;
+        height: 150px;
+        padding-top: 30px;
+        padding: 0;
+    }
+
+
+    .social {
+        width: 100%;
+        display: flex;
+        padding-left: 0px;
+    }
+
+
+    .logo {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        padding-left: 150px;
+    }
+
+
+
+
+    .info {
+        width: 100%;
+        text-align: right;
+        padding-right: 50px;
+        font-size: 1.7rem;
+
+    }
 
 }
