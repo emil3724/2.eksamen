@@ -11,7 +11,7 @@ function sidenVises() {
 }
 
 let side;
-const url = "https://marielouiselarsen.eu/kea/2-semester/tema10_eksamen/wordpress/wp-json/wp/v2/tatovering?per_page=6";
+const url = "http://marielouiselarsen.eu/kea/2-semester/tema10_eksamen/wordpress//wp-json/wp/v2/tatovering?per_page=6";
 
 document.addEventListener("DOMContentLoaded", start);
 
