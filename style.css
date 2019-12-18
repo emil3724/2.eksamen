@@ -25,17 +25,21 @@ img {
 	width: 100%;
 }
 
-h2 {
+h1 {
 	font-family: 'Abril Fatface', cursive;
+	font-size: 2.5rem;
 }
 
-h3 {
+h2 {
 	font-family: 'Abril Fatface', cursive;
+	font-size: 1.6rem;
+
 }
 
 p {
 	/*    font-family: 'Raleway', sans-serif;*/
 	font-family: 'Dosis', sans-serif;
+	font-size: 1rem;
 }
 
 .sticky {
@@ -55,13 +59,11 @@ p {
 nav {
 	z-index: 1;
 	width: 100vw;
-	font-size: 16px;
 	top: 0;
 }
 
 #logo_nav {
 	font-family: 'Abril Fatface', cursive;
-	font-size: 1.25rem;
 	color: #7D7096;
 }
 
@@ -71,9 +73,9 @@ nav {
 	right: 0;
 	text-align: left;
 	padding-right: 10px;
-	font-size: 2rem;
 	cursor: pointer;
 	color: white;
+	font-size: 2rem;
 }
 
 #menu {
@@ -81,7 +83,6 @@ nav {
 	flex-direction: column;
 	list-style-type: none;
 	justify-content: center;
-
 	transition: transform .3s;
 	transform-origin: left bottom;
 	top: 0;
@@ -99,14 +100,14 @@ ul {
 
 li {
 	font-family: 'Abril Fatface', cursive;
-	font-size: 20px;
 	color: #7D7096;
 	padding: 0;
+	padding-bottom: 10px;
 
 }
 
 li a {
-	font-size: 16px;
+	font-size: 1.5rem;
 	color: #707070;
 }
 
@@ -115,11 +116,14 @@ a {
 	color: black;
 	font-family: monospace;
 	cursor: pointer;
+	color: #707070;
 }
 
 a:hover {
 	color: #F2EBEE;
 }
+
+/*PRISER*/
 
 #collapsible {
 	z-index: 2;
@@ -129,7 +133,6 @@ a:hover {
 	border: none;
 	text-align: left;
 	outline: none;
-	font-size: 16px;
 	color: #707070;
 }
 
@@ -153,7 +156,19 @@ a:hover {
 
 }
 
-/*   slideshow   */
+.luk_knap {
+	width: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	align-self: center font-size: 2rem;
+}
+
+.luk_knap:hover {
+	cursor: pointer;
+}
+
+/*SPLASH */
+
 
 #splash {
 	background-image: url(Billeder/omg_baggrund-kopi.png);
@@ -161,6 +176,9 @@ a:hover {
 	height: 250px;
 
 }
+
+/*   slideshow   */
+
 }
 
 .mySlides {
@@ -172,7 +190,6 @@ a:hover {
 	position: absolute;
 	width: 100vw;
 	text-align: center;
-	font-size: 30px;
 	top: 145px;
 	color: #7D7096;
 
@@ -206,24 +223,12 @@ a:hover {
 
 }
 
-.velkommen_tekst h2 {
-	/*    color: #7D7096;*/
-	font-size: 2.5rem;
-	text-align: center;
-}
-
 .undertekst {
 	text-align: center;
 }
 
 .velkommen_tekst p {
 	color: #7D7096;
-	font-size: 1.0rem;
-}
-
-iframe {
-	width: 100%;
-	height: 500px;
 }
 
 /*  video  */
@@ -231,6 +236,11 @@ iframe {
 .video {
 	background-color: white;
 	height: 400px;
+}
+
+iframe {
+	width: 100%;
+	height: 500px;
 }
 
 /*      */
@@ -244,7 +254,6 @@ iframe {
 	margin: 0;
 	margin-top: 50px;
 	padding-top: 20px;
-	font-size: 35px;
 }
 
 #portfolio {
@@ -256,7 +265,7 @@ iframe {
 	background-image: url(Billeder/omg_baggrund-kopi.png);
 	background-position: bottom;
 	padding-bottom: 200px;
-	padding-top: 50px;
+	padding-top: 20px;
 
 }
 
@@ -271,12 +280,16 @@ iframe {
 	top: -200px;
 	margin-right: 48px;
 	text-align: right;
-	font-size: 18px;
 	animation: pulse_port 1s infinite;
 	animation-duration: 1.7s;
 	animation-timing-function: ease-in;
 	animation-direction: alternate;
+	font-size: 1.3rem;
 
+}
+
+..link_til_portfolio a {
+	color: black;
 }
 
 .link_til_portfolio a:hover {
@@ -291,20 +304,6 @@ iframe {
 	100% {
 		transform: scale(1.0);
 	}
-}
-
-
-
-.luk_knap {
-	width: 50px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	font-size: 30px;
-	align-self: center
-}
-
-.luk_knap:hover {
-	cursor: pointer;
 }
 
 
@@ -338,7 +337,6 @@ iframe {
 .anmeldelser_h2 {
 	text-align: center;
 	color: #7D7096;
-	font-size: 35px;
 }
 
 #anmeldelser p {
@@ -346,7 +344,6 @@ iframe {
 }
 
 .anmeldelse1_person p {
-	font-size: 13px;
 	font-style: italic;
 	color: #7D7096;
 
@@ -368,14 +365,15 @@ iframe {
 
 .kontakt_tekst h2 {
 	color: #7D7096;
-	font-size: 30px;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 40px;
+	padding-bottom: 30px;
 }
 
 .kontakt_tekst p {
 	padding-left: 30px;
 	padding-right: 30px;
+	line-height: 1.5rem;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -420,38 +418,6 @@ input[type=submit]:hover {
 	filter: grayscale(100%);
 	height: 300px;
 	margin-bottom: 0;
-}
-
-.social {
-	width: 100%;
-}
-
-.social img {
-	width: 40px;
-}
-
-
-.logo {
-	width: 100%;
-	text-align: center;
-	color: white;
-}
-
-.logo h2 {
-	margin: 0;
-	padding: 0;
-}
-
-.info {
-	width: 100%;
-	text-align: right;
-	font-size: 0.8rem;
-	margin-top: 20px;
-}
-
-.info p {
-	padding: 0;
-	margin: 4px;
 }
 
 /*Portfolio site*/
@@ -509,6 +475,8 @@ input[type=submit]:hover {
 	padding-bottom: 5px;
 }
 
+/*FOOTER*/
+
 footer {
 	width: 100%;
 	color: white;
@@ -517,7 +485,6 @@ footer {
 	justify-content: space-around;
 	background-color: #7d7096;
 	height: 150px;
-	padding-top: 20px;
 
 }
 
@@ -526,7 +493,11 @@ footer {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	padding-top: 40px;
+	padding-top: 50px;
+}
+
+.social img {
+	width: 30px;
 }
 
 .social a:hover {
@@ -552,21 +523,21 @@ footer {
 
 
 
-
 .info {
 	width: 100%;
 	text-align: right;
+	padding-top: 20px;
+	padding-right: 10px;
 
 }
-
-.info p {
-	font-size: 0.9rem;
-}
-
 
 /*WEB MEDIUM*/
 
 @media only screen and (min-width: 690px) {
+
+	h2 {
+		font-size: 2rem;
+	}
 
 	.hidden {
 		display: none;
@@ -579,7 +550,6 @@ footer {
 	nav {
 		z-index: 2;
 		width: 100vw;
-		font-size: 16px;
 	}
 
 	#menuknap {
@@ -601,7 +571,6 @@ footer {
 
 	li {
 		font-family: 'Abril Fatface', cursive;
-		font-size: 20px;
 		color: #7D7096;
 
 	}
@@ -629,7 +598,6 @@ footer {
 		border: none;
 		text-align: left;
 		outline: none;
-		font-size: 15px;
 	}
 
 	#collapsible:hover {
@@ -642,13 +610,22 @@ footer {
 		z-index: 2;
 		position: fixed;
 		width: 100%;
-		height: 100vh;
+		height: 50vh;
+		margin-top: 50px;
 		color: white;
 		background-color: #9289a5;
 		text-align: center;
 		align-content: center;
 		padding-right: 20px;
 		padding-left: 20px;
+	}
+
+	.luk_knap {
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		align-self: center;
+		font-size: 2rem;
 	}
 
 
@@ -673,16 +650,10 @@ footer {
 	}
 
 	.velkommen_img {
+		width: 500px;
 		padding: 10px;
 		padding-top: 70px;
 		margin: 0;
-	}
-
-	.velkommen_tekst h2 {
-		/*        color: #7D7096;*/
-		font-size: 4rem;
-		text-align: center;
-		line-height: 4.5rem;
 	}
 
 	.velkommen_tekst p {
@@ -707,10 +678,13 @@ footer {
 		position: absolute;
 		width: 100vw;
 		text-align: center;
-		font-size: 60px;
 		top: 250px;
 		color: #7D7096;
 
+	}
+
+	.overskrift h1 {
+		font-size: 4rem;
 	}
 
 
@@ -800,7 +774,6 @@ footer {
 	}
 
 	.anmeldelse p {
-		font-size: 15px;
 		height: 100px;
 		line-height: 1.5;
 	}
@@ -817,6 +790,13 @@ footer {
 		padding-right: 40px;
 		padding-left: 40px;
 		padding-top: 50px;
+	}
+
+	.kontakt_tekst h2 {
+		color: #7D7096;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 30px;
 	}
 
 	.container_kontakt {
@@ -874,11 +854,6 @@ footer {
 		padding-top: 20px;
 	}
 
-	.info p {
-		font-size: 1.2rem;
-	}
-
-
 }
 
 
@@ -929,10 +904,13 @@ footer {
 		position: absolute;
 		width: 100vw;
 		text-align: center;
-		font-size: 60px;
 		top: 440px;
 		color: #7D7096;
 
+	}
+
+	.overskrift h1 {
+		font-size: 5rem;
 	}
 
 
@@ -972,13 +950,12 @@ footer {
 
 	.velkommen_tekst h2 {
 		/*        color: #7D7096;*/
-		font-size: 30px;
 		text-align: center;
 	}
 
 	.velkommen_tekst p {
 		text-align: justify;
-		font-size: 1.2rem;
+
 	}
 
 
