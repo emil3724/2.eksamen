@@ -1,3 +1,63 @@
+/*INDHOLDSFORTEGNELSE
+
+- MOBILE FIRST -
+
+1. FONT
+2. GENERELLE INDSTILLINGER
+3. MENU
+4. PRISER
+5. SPLASH
+6. SLIDESHOW
+7. VELKOMMEN
+8. VIDEO
+9. GOOGLE MAPS
+10. PORTFOLIO
+11. ANMELDELSER
+12. KONTAKT
+13. PORTFOLIO SITE
+14. FOOTER
+
+- WEB MEDIUM -
+
+15. GENERELLE INDSTILLINGER
+16. MENU
+17. PRISER
+18. VELKOMMEN
+19. SPLASH
+20. SLIDESHOW
+21. VIDEO
+22. PORTFOLIO
+23. ANMELDELSER
+24. KONTAKT
+25. FOOTER
+
+- WEB LARGE -
+
+26. MENU
+27. SPLASH
+28. SLIDESHOW
+29. VELKOMMEN
+30. PORTFOLIO
+31. ANMELDELSER
+32. KONTAKT
+33. FOOTER
+
+*/
+
+
+/*1. FONT*/
+
+@font-face {
+	font-family: 'vampire_warsregular';
+	src: url('vampire_wars-webfont.woff2') format('woff2'),
+		url('vampire_wars-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+/*2. GENERELLE INDSTILLINGER*/
+
 * {
 	box-sizing: border-box;
 }
@@ -7,13 +67,6 @@ body {
 	background-color: #CBC0C5;
 
 }
-
-/*
-	background-image: url(Billeder/baggrund.png);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-*/
 
 /*
 html {
@@ -26,13 +79,13 @@ img {
 }
 
 h1 {
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'vampire_warsregular';
 	font-size: 2.5rem;
 }
 
 h2 {
-	font-family: 'Abril Fatface', cursive;
 	font-size: 1.6rem;
+	font-family: 'vampire_warsregular';
 
 }
 
@@ -40,19 +93,22 @@ p {
 	/*    font-family: 'Raleway', sans-serif;*/
 	font-family: 'Dosis', sans-serif;
 	font-size: 1rem;
-	font-family: 'Abril Fatface', cursive;
 
 }
 
-h2 {
-	font-family: 'Abril Fatface', cursive;
-	font-size: 2.5rem;
+a {
+	text-decoration-line: none;
+	color: black;
+	font-family: monospace;
+	cursor: pointer;
+	font-size: 16px;
+	color: #707070;
 }
 
-p {
-	/*    font-family: 'Raleway', sans-serif;*/
-	font-family: 'Dosis', sans-serif;
+a:hover {
+	color: #F2EBEE;
 }
+
 
 .sticky {
 	position: fixed;
@@ -67,16 +123,14 @@ p {
 	text-decoration: none;
 }
 
+/*3. MENU*/
+
 
 nav {
 	z-index: 1;
 	width: 100vw;
 	top: 0;
-}
-
-#logo_nav {
-	font-family: 'Abril Fatface', cursive;
-	color: #7D7096;
+	color: #707070;
 }
 
 #menuknap {
@@ -110,37 +164,9 @@ nav {
 }
 
 #logo_nav {
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'vampire_warsregular';
 	font-size: 1.25rem;
 	color: #7D7096;
-}
-
-#menuknap {
-	display: inline-block;
-	position: absolute;
-	right: 0;
-	text-align: left;
-	padding-right: 10px;
-	font-size: 2rem;
-	cursor: pointer;
-	color: white;
-}
-
-#menu {
-	display: flex;
-	flex-direction: column;
-	list-style-type: none;
-	justify-content: center;
-
-	transition: transform .3s;
-	transform-origin: left bottom;
-	top: 0;
-	height: 170px;
-	width: 100%;
-	margin: 0;
-	text-align: center;
-	background-color: white;
-
 }
 
 ul {
@@ -148,14 +174,12 @@ ul {
 }
 
 li {
-	font-family: 'Abril Fatface', cursive;
 	color: #7D7096;
 	padding: 0;
 	padding-bottom: 10px;
-	font-family: 'Abril Fatface', cursive;
 	font-size: 1rem;
 	line-height: 30px;
-	color: #7D7096;
+	color: #707070;
 	padding: 0;
 
 }
@@ -166,28 +190,7 @@ li a {
 	color: #707070;
 }
 
-a {
-	text-decoration-line: none;
-	color: black;
-	font-family: monospace;
-	cursor: pointer;
-	color: #707070;
-	font-size: 16px;
-	color: #707070;
-}
-
-a {
-	text-decoration-line: none;
-	color: black;
-	font-family: monospace;
-	cursor: pointer;
-}
-
-a:hover {
-	color: #F2EBEE;
-}
-
-/*PRISER*/
+/*4. PRISER*/
 
 #collapsible {
 	z-index: 2;
@@ -240,7 +243,7 @@ a:hover {
 	cursor: pointer;
 }
 
-/*SPLASH */
+/*5. SPLASH */
 
 
 #splash {
@@ -250,7 +253,7 @@ a:hover {
 
 }
 
-/*   slideshow   */
+/*   6. slideshow   */
 
 }
 
@@ -281,7 +284,7 @@ a:hover {
 }
 
 
-/*   velkommen   */
+/*   7. velkommen   */
 
 #velkommen_boks {
 	width: 100vw;
@@ -320,17 +323,16 @@ a:hover {
 	font-size: 1.0rem;
 }
 
-iframe {
-	width: 100%;
-	height: 500px;
-}
 
-/*  video  */
+
+/*  8. video  */
 
 .video {
 	background-color: white;
 	height: 400px;
 }
+
+/*9. GOOGLE MAPS*/
 
 iframe {
 	width: 100%;
@@ -339,7 +341,7 @@ iframe {
 
 /*      */
 
-/*Portfolio*/
+/*10. Portfolio*/
 
 .portfolio_h2 {
 	color: #7D7096;
@@ -432,7 +434,7 @@ iframe {
 
 
 
-/*     anmeldelser    */
+/*     11. anmeldelser    */
 
 .skull {
 	width: 30px;
@@ -485,7 +487,7 @@ iframe {
 
 
 
-/*     kontakt    */
+/*     12. kontakt    */
 
 .kontakt_tekst {
 	background-color: rgba(255, 255, 255, 0.37);
@@ -559,39 +561,7 @@ input[type=submit]:hover {
 	margin-bottom: 0;
 }
 
-.social {
-	width: 100%;
-}
-
-.social img {
-	width: 40px;
-}
-
-
-.logo {
-	width: 100%;
-	text-align: center;
-	color: white;
-}
-
-.logo h2 {
-	margin: 0;
-	padding: 0;
-}
-
-.info {
-	width: 100%;
-	text-align: right;
-	font-size: 0.8rem;
-	margin-top: 20px;
-}
-
-.info p {
-	padding: 0;
-	margin: 4px;
-}
-
-/*Portfolio site*/
+/* 13. Portfolio site*/
 
 .go_back {
 	padding: 10px;
@@ -646,7 +616,7 @@ input[type=submit]:hover {
 	padding-bottom: 5px;
 }
 
-/*FOOTER*/
+/*14. FOOTER*/
 
 footer {
 
@@ -664,7 +634,7 @@ footer {
 	justify-content: space-around;
 	background-color: #7d7096;
 	height: 150px;
-	padding-top: 20px;
+
 
 
 }
@@ -679,12 +649,9 @@ footer {
 }
 
 .social img {
-	width: 30px;
-
-	width: 100%;
+	width: 40px;
 	display: flex;
 	justify-content: space-around;
-	padding-top: 40px;
 
 }
 
@@ -700,7 +667,6 @@ footer {
 }
 
 .logo a {
-	font-family: 'Abril Fatface', cursive;
 	color: white;
 }
 
@@ -715,16 +681,11 @@ footer {
 
 	width: 100%;
 	text-align: right;
-	padding-top: 20px;
 	padding-right: 10px;
+	padding-top: 20px;
 
 }
 
-
-width: 100%;
-text-align: right;
-
-}
 
 .info p {
 	font-size: 0.9rem;
@@ -737,6 +698,8 @@ text-align: right;
 @media only screen and (min-width: 690px) {
 
 
+	/*	15. GENERELLE INDSTILLINGER (MEDIUM)*/
+
 	h2 {
 		font-size: 2rem;
 	}
@@ -748,6 +711,10 @@ text-align: right;
 		opacity: 0;
 		text-decoration: none;
 	}
+
+
+	/*	16. MENU (MEDIUM)*/
+
 
 	nav {
 		z-index: 2;
@@ -771,30 +738,10 @@ text-align: right;
 		padding-top: 10px;
 	}
 
-	li {
-		font-family: 'Abril Fatface', cursive;
-		color: #7D7096;
-
-	}
-
-	li a {
-		font-size: 16px;
-		color: #707070;
-	}
-
-	a {
-		text-decoration-line: none;
-		color: black;
-		font-family: monospace;
-		cursor: pointer;
-	}
-
-	a:hover {
-		color: #F2EBEE;
-	}
+	/*	17. PRISER (MEDIUM)*/
 
 	#collapsible {
-		color: #444;
+		color: #707070;
 		cursor: pointer;
 		width: 100%;
 		border: none;
@@ -818,8 +765,8 @@ text-align: right;
 		background-color: #9289a5;
 		text-align: center;
 		align-content: center;
-		padding-right: 20px;
-		padding-left: 20px;
+		padding-right: 250px;
+		padding-left: 250px;
 	}
 
 	.luk_knap {
@@ -833,7 +780,7 @@ text-align: right;
 
 
 
-	/*     velkommen     */
+	/*	18. VELKOMMEN (MEDIUM)*/
 
 
 	#velkommen_boks {
@@ -864,130 +811,8 @@ text-align: right;
 		text-align: justify;
 	}
 
-	.hidden {
-		display: none;
-		transform: scale(0);
-		transform: translateY(100%);
-		opacity: 0;
-		text-decoration: none;
-	}
+	/*	19. SPLASH (MEDIUM)*/
 
-	nav {
-		z-index: 2;
-		width: 100vw;
-		font-size: 16px;
-	}
-
-	#menuknap {
-		display: none;
-	}
-
-	#menu {
-		display: flex;
-		position: fixed;
-		flex-direction: row;
-		list-style-type: none;
-		justify-content: space-around;
-		top: 0;
-		width: 100%;
-		height: 50px;
-		margin: 0;
-		padding-top: 10px;
-	}
-
-	li {
-		font-family: 'Abril Fatface', cursive;
-		font-size: 20px;
-		color: #7D7096;
-
-	}
-
-	li a {
-		font-size: 16px;
-		color: #707070;
-	}
-
-	a {
-		text-decoration-line: none;
-		color: black;
-		font-family: monospace;
-		cursor: pointer;
-	}
-
-	a:hover {
-		color: #F2EBEE;
-	}
-
-	#collapsible {
-		color: #444;
-		cursor: pointer;
-		width: 100%;
-		border: none;
-		text-align: left;
-		outline: none;
-		font-size: 15px;
-	}
-
-	#collapsible:hover {
-		color: #F2EBEE;
-	}
-
-	#content_collap {
-		display: flex;
-		flex-direction: column;
-		z-index: 2;
-		position: fixed;
-		width: 100%;
-		height: 100vh;
-		color: white;
-		background-color: #9289a5;
-		text-align: center;
-		align-content: center;
-		padding-right: 20px;
-		padding-left: 20px;
-	}
-
-
-
-
-	/*     velkommen     */
-
-
-	#velkommen_boks {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		margin-bottom: 50px;
-	}
-
-
-	.velkommen_tekst {
-		line-height: 25px;
-		width: 500px;
-		padding: 10px;
-	}
-
-	.velkommen_img {
-		padding: 10px;
-		padding-top: 70px;
-		margin: 0;
-	}
-
-	.velkommen_tekst h2 {
-		/*        color: #7D7096;*/
-		text-align: center;
-		line-height: 4.5rem;
-	}
-
-	.velkommen_tekst p {
-		padding-right: 20px;
-		padding-left: 20px;
-		text-align: justify;
-	}
-
-
-	/*    */
 
 	#splash {
 		width: 100%;
@@ -996,8 +821,6 @@ text-align: right;
 		padding-bottom: 600px;
 
 	}
-
-
 
 	.overskrift {
 		display: inline;
@@ -1013,6 +836,8 @@ text-align: right;
 		font-size: 4rem;
 	}
 
+	/*	20. SLIDESHOW (MEDIUM)*/
+
 
 
 	.slideshow {
@@ -1022,8 +847,9 @@ text-align: right;
 
 	}
 
+	/*	21. VIDEO (MEDIUM)*/
 
-	.mySlides {}
+
 
 	#video_container {
 		margin-left: 50px;
@@ -1032,7 +858,7 @@ text-align: right;
 	}
 
 
-	/*    portfolio   */
+	/*    22. portfolio (MEDIUM)   */
 
 
 	#portfolio {
@@ -1070,7 +896,7 @@ text-align: right;
 	}
 
 
-	/*    anmeldelser    */
+	/*   23. anmeldelser (MEDIUM)   */
 
 
 	#anmeldelser {
@@ -1116,7 +942,7 @@ text-align: right;
 	}
 
 
-	/*     kontakt   */
+	/*     24. kontakt (MEDIUM)  */
 
 
 	.kontakt_tekst {
@@ -1154,7 +980,7 @@ text-align: right;
 	}
 
 
-	/*     footer    */
+	/*     25. footer (MEDIUM)   */
 
 	footer {
 		color: white;
@@ -1210,16 +1036,21 @@ text-align: right;
 
 @media only screen and (min-width: 1200px) {
 
+	/*	26. MENU (LARGE)*/
+
 	#menu {
 		display: flex;
 		position: fixed;
 		flex-direction: row;
 		list-style-type: none;
 		top: 0;
-		width: 100;
 		height: 50px;
 		margin: 0;
 		padding-top: 10px;
+	}
+
+	li {
+		color: #707070;
 	}
 
 	#logo_nav {
@@ -1228,15 +1059,21 @@ text-align: right;
 
 	.menu_knap1 {
 		padding-left: 690px;
+		color: #707070;
+
 	}
 
 	.menu_knap2 {
 		padding-left: 100px;
+		color: #707070;
 	}
 
 	.menu_knap3 {
 		padding-left: 100px;
+		color: #707070;
 	}
+
+	/*	27. SPLASH (LARGE)*/
 
 	#splash {
 		width: 100%;
@@ -1262,7 +1099,7 @@ text-align: right;
 		font-size: 5rem;
 	}
 
-
+	/*	28. SLIDESHOW (LARGE)*/
 
 	.slideshow {
 		display: flex;
@@ -1272,10 +1109,7 @@ text-align: right;
 	}
 
 
-	.mySlides {}
-
-
-	/*  velkommen  */
+	/*  29. velkommen (LARGE) */
 
 	#velkommen_boks {
 		width: 100%;
@@ -1320,13 +1154,14 @@ text-align: right;
 
 
 
-	/*     portfolio  */
+	/*   30.  portfolio (LARGE)  */
 
 	#portfolio {
 		width: 100%;
 		padding-left: 40px;
 		padding-right: 40px;
 		padding-bottom: 250px;
+
 	}
 
 	.link_til_portfolio {
@@ -1359,7 +1194,7 @@ text-align: right;
 
 
 
-	/*    anmeldelser  */
+	/*    31. anmeldelser (LARGE) */
 
 
 	#anmeldelser {
@@ -1398,7 +1233,7 @@ text-align: right;
 	}
 
 
-	/*    kontakt    */
+	/*    32. kontakt  (LARGE)  */
 
 
 	.kontakt_tekst {
@@ -1427,7 +1262,7 @@ text-align: right;
 
 
 
-	/*     footer     */
+	/*     33. footer  (LARGE)   */
 
 	footer {
 		width: 100%;
@@ -1437,8 +1272,7 @@ text-align: right;
 		justify-content: space-between;
 		background-color: #7d7096;
 		height: 150px;
-		padding-top: 30px;
-		padding: 0;
+
 	}
 
 
@@ -1464,6 +1298,7 @@ text-align: right;
 		text-align: right;
 		padding-right: 50px;
 		font-size: 1.7rem;
+		padding-top: 0;
 
 	}
 
